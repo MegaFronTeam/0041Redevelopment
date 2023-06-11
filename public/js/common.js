@@ -335,7 +335,7 @@ function eventHandler() {
 	JSCCommon.modalCall();
 	// JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
-	// JSCCommon.inputMask();
+	JSCCommon.inputMask();
 	JSCCommon.sendForm();
 	JSCCommon.heightwindow();
 	JSCCommon.makeDDGroup();
@@ -424,6 +424,17 @@ function eventHandler() {
 		e.preventDefault();
 		$('.cookies').fadeOut();
 	})
+
+	function inputFile(){
+		if (document.querySelector('.upload-field')){
+			let uploadField = document.querySelectorAll('.upload-field');
+			for (let i=0;i<uploadField.length;i++){
+				let inputFile = uploadField[i].querySelector('.input-upload');
+				inputFile.addEventListener('change',() => uploadField[i].querySelector('.upload-field__file-name').innerHTML = inputFile.files[0].name);
+			}
+		}
+	}
+	inputFile();
 
 };
 if (document.readyState !== 'loading') {
