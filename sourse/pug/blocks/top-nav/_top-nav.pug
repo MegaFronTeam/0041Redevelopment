@@ -1,5 +1,5 @@
 mixin menu-toggle()
-	+b.toggle-menu-mobile--js.d-lg-none
+	+b.toggle-menu-mobile--js
 		span
 mixin mob-mnu()
 	-
@@ -22,8 +22,13 @@ mixin top-nav()
 	+b.top-nav.block-with-lazy
 		.container
 			.row
+				.col
+					+menu-toggle()
+					+mnu()
 				.col-auto
-					+e.logo(href='/'): +img('img/logo.png')
+					+e.text Пн-Пт 10:00-18:00
+				.col-auto
+					+e.text(href='mailto:info@pryamoepravo.ru') info@pryamoepravo.ru
 				//- .col.order-lg-0.order-last
 				//- 	.menu-mobile.menu-mobile--js
 				//- 		.menu-mobile__inner

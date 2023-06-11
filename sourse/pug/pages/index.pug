@@ -6,13 +6,15 @@ include ../blocks/sContent/_sContent.pug
  
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
+include ../blocks/sOurServices/_sOurServices.pug
+include ../blocks/sAudit/_sAudit.pug
 
 block variables
 	- let  mainPage= 'main-page' 
 	- let  bg= 'main.jpg'
 
 block title
-	- let  title= 'Academic Hospital Solingen, Germany | Diagnostics, counseling and treatment in Germany'
+	- let  title= 'Главная'
 	title= title
 block pagecontent
 	//- +mob-mnu()
@@ -20,7 +22,9 @@ block pagecontent
 	
 	+parts('header')
 	main
-		+headerBlock 
+		+headerBlock()
+		+sOurServices()
+		+sAudit
 	+parts('footer')
 	+parts('modals')
 	//- +cookies()

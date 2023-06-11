@@ -548,12 +548,11 @@ iframe {
 	margin-right: auto;
 }
 
-.btn {
-	text-transform: uppercase;
-	&-light {
-		--bs-btn-color: #{$primary};
-		--bs-btn-hover-color: #{$primary};
-		--bs-btn-active-color: #{$primary};
-		--bs-btn-disabled-color: #{$primary};
+p {
+	font-weight: 300;
+	font-size: rem(14);
+	line-height: 1.2;
+	@include media-breakpoint-up(lg) {
+		font-size: rem(16);
 	}
 }
