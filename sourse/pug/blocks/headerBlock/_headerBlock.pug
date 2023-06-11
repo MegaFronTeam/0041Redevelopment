@@ -1,0 +1,40 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock.section#headerBlock.bg-wrap&attributes(attributes)
+		+e.img-wrap.picture-bg: +img('img/headerBlock-bg-1.jpg', 'bg')
+		.container
+			+b.section-title
+				h1 Academic Hospital Solingen, Germany
+				p We are there for you 24/7
+				+e.btn.btn.btn-primary(href='#sDepartments') view departments
+			+e.row.row
+				mixin item(title)
+					+e.item
+						h3!= title
+						block
+				+e.col.col-lg-4
+					+item('Opening Hours')
+						+e.link(href='tel:+492125476913')
+							+icon('phone')
+							| Tel: + 49 212 547 69 13
+						ul
+							li 
+								+icon('time')
+								| Our office hours  
+							li 
+								+icon('time')
+								| Daily&nbsp;8.00&nbsp;am&nbsp;&mdash; 16.00&nbsp;pm
+							li 
+								+icon('time')
+								| Emergecy cases   24/7
+				+e.col.col-lg-4
+					+item('Doctors Timetable')
+						p You are able to&nbsp;book an&nbsp;appointment with the doctor you need to&nbsp;visit and check their timetable.
+						+e.btn.btn.btn-sm.btn-primary(href='#sForm')
+							+icon('calendar')
+							| view timetable
+				+e.col.col-lg-4
+					+item('Klinikum Solingen')
+						
+						p In&nbsp;one of&nbsp;the most modern hospitals in&nbsp;Europe, specialists from a&nbsp;wide range of&nbsp;disciplines work together under one roof. The latest medical technology, innovative information technology and an&nbsp;architecture oriented towards the care process support doctors, nurses and therapists.
+	// end headerBlock

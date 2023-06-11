@@ -1,0 +1,50 @@
+
+mixin modal() 
+	//  start modals
+	//- a(href="modal-call").link-modal-js modal-call 
+	div(id="modal-call"  style="display: none" )
+		+b.modal-win
+			+e.row.row
+				.col-md
+					+sDepartmentsItem(1, 'Neurology', true)
+				.col-md-auto
+					p.pragraph The Neurosurgery at&nbsp;the hospital Solingen is&nbsp;one of&nbsp;the leading neurosurgical centres in&nbsp;Europe. Firmly anchored in&nbsp;the Neurocentre of&nbsp;the Head Clinic and the neighbouring specialist clinics of&nbsp;the University Medical School, we&nbsp;offer our patients neurosurgical therapy at&nbsp;the highest medical level. In&nbsp;five state-of-the-art operating theatres, we&nbsp;treat the entire spectrum of&nbsp;diseases of&nbsp;the peripheral and central nervous system. Special focal points are brain tumour surgery and spinal surgery.
+			+form-wrap
+				+e.row.row
+					.col-sm-6
+						+input('Phone number', 'tel')(required)
+					.col-sm-6
+						+input('Email', 'email')
+					.col-md-6.order-md-last
+						+policy
+					.col
+						+e.btn.btn.btn-primary(type="submit") Request call
+	// #modal-call
+
+	div(id="modal-call-2"  style="display: none" )
+		+b.modal-win
+			+e.row.row
+				.col-md
+					+medicalSpecialistsItem('sMedicalSpecialists-img-4.png', 'PD Dr. Buhl')
+				.col-md-auto
+					p.pragraph Surgery of&nbsp;the respiratory tract is&nbsp;generally performed by&nbsp;specialists in&nbsp;cardiothoracic surgery (or&nbsp;thoracic surgery) though minor procedures may be&nbsp;performed by pulmonologists. Pulmonology is&nbsp;closely.
+			+form-wrap
+				+e.row.row
+					.col-sm-6
+						+input('Phone number', 'tel')(required)
+					.col-sm-6
+						+input('Email', 'email')
+					.col-md-6.order-md-last
+						+policy
+					.col
+						+e.btn.btn.btn-primary(type="submit") Request call
+	// #modal-call
+	
+	div(id="modal-thanks"  style="display: none" )
+		+b.modal-win--thanks
+			.text-center
+				.h2 Thanks for your response
+				p We will answer as soon as possible
+				.btn.btn-primary.modal-close-js Close
+	// #modal-thanks
+	// end modals

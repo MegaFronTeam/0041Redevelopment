@@ -1,0 +1,77 @@
+include ../../_assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+include components/menu.pug
+include components/icon.pug
+include components/breadcrumb.pug
+include components/pugination.pug
+include components/soc.pug
+include components/pic.pug
+include components/img.pug
+include components/btn.pug
+
+include components/ddgroup.pug
+
+mixin arrow()
+	.swiper-button-hand.swiper-button-hand-prev.swiper-button-prev
+		+icon('chevron-left')
+	.swiper-button-hand.swiper-button-hand-next.swiper-button-next
+		+icon('chevron-right')
+//- /arrow for swiper-slider
+
+mixin ie11()
+	//- modernizer and for ie11
+	 
+	<!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
+
+mixin addblock()
+	+b.addBlock
+		+e.btn--minus(type="button")
+		input(type="text" value="1")
+		+e.btn--plus(type="button")
+
+
+
+mixin search()
+	+b.search-block
+		form
+			input(type="text" placeholder="Поиск по номеру или названию запчасти")
+			button 
+				+icon("search")
+
+mixin page-head(t,...items)
+	+b.page-head
+		- let l = items.length
+		.container
+			+breadcrumb('Главная',...items)
+
+			h1= t
+
+mixin parts(elem)
+	script.
+		addBlock(`#{elem}`)
+	div(id=`${elem}Wrap`)
+
+mixin sDepartmentsItem(i, text, modalImg)
+	+b.sDepartments-item
+		if modalImg
+			+img(`img/svg/sDepartments-img-${i}.svg`).modal-img
+		else
+			+img(`img/svg/sDepartments-img-${i}.svg`).img-svg-js
+		span.modal-title!= text
+
+mixin medicalSpecialistsItem(img, title, text)
+	+b.sMedicalSpecialists-item
+		+e.img-wrap
+			.img-wrap-center
+				+img(`img/${img}`).modal-img
+		h3.modal-title!=title
+		p!=text 
+
+mixin cookies()
+	+b.cookies
+		.container
+			.h4 This website uses cookies
+			p This website uses cookies to&nbsp;improve user experience. By&nbsp;using our website you consent to&nbsp;all cookies in&nbsp;accordance with our Cookie Policy.
+			+e.row-btn
+				+e.btn--js.btn.btn-primary(href='#') I agree
+				+e.btn.btn.btn-outline-primary(href='#') Request call

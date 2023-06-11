@@ -1,0 +1,17 @@
+mixin sForm()
+	// start sForm
+	+b.SECTION.sForm.section#sForm.bg-wrap&attributes(attributes)
+		+e.img-wrap.picture-bg: +img('img/sForm-bg-1.png', 'bg')
+		+e.container.container
+			img(src="img/sForm-bg-2.png", alt="").img
+			+e.row.row
+				.col-lg-6.ms-auto
+					+form-wrap
+						h2 Contact Information
+						p Complete the form and we will send you a confirmation within 24 hours.
+						+input("Name",'text')
+						+input("Phone number",'tel')(required)
+						+input("Email",'email')
+						+policy
+						+e.btn.btn.btn-light(type="submit") Request call
+	// end sForm

@@ -1,0 +1,30 @@
+extends ../layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+
+block variables
+	- let  mainPage= null 
+	- let  bg= null
+
+block title
+	- let  title= 'Модальные окна'
+	title= title
+block pagecontent
+	//- +topLine()
+	main
+		.section.container
+			h1 Страница для  демонстрации модальных окон
+			.row
+				mixin btn(id, name)
+					.col-auto.mb-2
+						a.btn.btn-primary(href=`#` data-src=id data-fancybox="modal")= name
+				+btn("modal-call", "modal-call")
+				+btn("modal-call-2", "modal-call-2")
+				+btn("modal-thanks", "modal-thanks")
+				//- +btn("modal-article", "modal-article")
+				//- +btn("modal-article-2", "modal-article-2")
+
+	+parts('modals')
