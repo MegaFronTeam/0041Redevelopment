@@ -51,31 +51,6 @@ mixin parts(elem)
 		addBlock(`#{elem}`)
 	div(id=`${elem}Wrap`)
 
-mixin sDepartmentsItem(i, text, modalImg)
-	+b.sDepartments-item
-		if modalImg
-			+img(`img/svg/sDepartments-img-${i}.svg`).modal-img
-		else
-			+img(`img/svg/sDepartments-img-${i}.svg`).img-svg-js
-		span.modal-title!= text
-
-mixin medicalSpecialistsItem(img, title, text)
-	+b.sMedicalSpecialists-item
-		+e.img-wrap
-			.img-wrap-center
-				+img(`img/${img}`).modal-img
-		h3.modal-title!=title
-		p!=text 
-
-mixin cookies()
-	+b.cookies
-		.container
-			.h4 This website uses cookies
-			p This website uses cookies to&nbsp;improve user experience. By&nbsp;using our website you consent to&nbsp;all cookies in&nbsp;accordance with our Cookie Policy.
-			+e.row-btn
-				+e.btn--js.btn.btn-primary(href='#') I agree
-				+e.btn.btn.btn-outline-primary(href='#') Request call
-
 mixin upload-field()
 	+b.upload-field
 		+e.wrap
