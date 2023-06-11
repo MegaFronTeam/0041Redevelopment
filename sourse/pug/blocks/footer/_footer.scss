@@ -1,9 +1,16 @@
 .footer {
 	--sPT: 0;
-	--sPB: 0;
+	--sPB: #{rem(20)};
 	// --sTPB: #{rem()};
 	background-color: $gray-800;
 	color: $white;
+	font-size: rem(14);
+	@include media-breakpoint-up(lg) {
+		font-size: rem(15);
+	}
+	@include media-breakpoint-up(xl) {
+		font-size: rem(16);
+	}
 	&__top {
 		@include rfs(75px, padding-top);
 		@include rfs(75px, padding-bottom);
@@ -11,6 +18,7 @@
 	}
 	&__row {
 		justify-content: space-between;
+		--bs-gutter-y: 2.2em;
 	}
 	&__list {
 		max-width: rem(330);
@@ -22,6 +30,7 @@
 			line-height: calc(19 / 16);
 		}
 		h6 {
+			font-size: rem(16);
 			color: rgba(255, 255, 255, 0.8);
 			margin-bottom: rem(12);
 		}
@@ -42,6 +51,69 @@
 			&:hover {
 				color: rgba(255, 255, 255, 0.8);
 			}
+		}
+	}
+	&__bottom {
+		@include rfs(40px, padding-top);
+		@include rfs(40px, padding-bottom);
+		color: rgba(255, 255, 255, 0.5);
+		& * {
+			line-height: calc(19 / 16);
+		}
+		.row {
+			align-items: center;
+		}
+		p {
+			margin-bottom: rem(6);
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__logo {
+		display: flex;
+		align-items: center;
+		@include roww(16px, m);
+		color: rgba(255, 255, 255, 0.8);
+		&:hover {
+			color: $white;
+		}
+		@include media-breakpoint-up(md) {
+			--bs-gutter-x: #{rem(26)};
+		}
+		img {
+			max-width: rem(77);
+			height: auto;
+			@include media-breakpoint-up(md) {
+				max-width: rem(86);
+			}
+		}
+		p {
+			font-weight: 400;
+			font-size: rem(16);
+			line-height: calc(24 / 18);
+			text-transform: uppercase;
+			margin-bottom: 0;
+			@include media-breakpoint-up(md) {
+				font-size: rem(18);
+			}
+		}
+	}
+	&__warning {
+		font-weight: 300;
+		font-size: rem(13);
+		line-height: calc(17 / 14);
+		color: rgba(255, 255, 255, 0.5);
+		@include media-breakpoint-up(xl) {
+			font-size: rem(14);
+		}
+	}
+	&__tel {
+		display: inline-block;
+		font-weight: 300;
+		color: rgba(255, 255, 255, 0.5);
+		&:hover {
+			color: rgba(255, 255, 255, 0.8);
 		}
 	}
 
