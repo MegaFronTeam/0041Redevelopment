@@ -436,6 +436,27 @@ function eventHandler() {
 	}
 	inputFile();
 
+	const sStepsswiper = new Swiper(".sSteps__slider--js", {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		pagination: {
+			el: ".swiper-pagination",
+			type: "progressbar",
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		breakpoints: {
+			576: {
+				slidesPerView: 2,
+			},
+			998: {
+				slidesPerView: 3,
+				spaceBetween: 120,
+			}
+		}
+	});
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

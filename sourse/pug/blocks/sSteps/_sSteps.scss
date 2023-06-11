@@ -1,0 +1,111 @@
+// start .sSteps
+.sSteps {
+	--sPT: #{rem(40)};
+	--sPB: #{rem(40)};
+	--sTPB: #{rem(14)};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(60)};
+		--sPB: #{rem(60)};
+		--sTPB: #{rem(30)};
+	}
+	.section-title {
+		--bs-gutter-y: #{rem(12)};
+		display: flex;
+		flex-direction: column;
+		margin-top: calc(var(--bs-gutter-y) * -1);
+		@include media-breakpoint-up(lg) {
+			flex-direction: row;
+			align-items: center;
+		}
+		& > * {
+			margin-top: var(--bs-gutter-y);
+		}
+		h2 {
+			margin-bottom: 0;
+			margin-right: auto;
+		}
+		.swiper-button-hand {
+			position: static;
+			border-radius: 4px;
+			background-color: $primary;
+			color: #fff;
+			width: rem(40);
+			height: rem(40);
+			border: none;
+			flex: 0 0 auto;
+			@include media-breakpoint-up(lg) {
+				width: rem(50);
+				height: rem(50);
+			}
+			&:hover {
+				background-color: #1a189b;
+			}
+			.icon {
+				fill: none;
+				stroke: currentColor;
+				stroke-width: 2px;
+				font-size: rem(11);
+			}
+			&-next {
+				margin-left: rem(20);
+			}
+		}
+	}
+	&__slider {
+		padding-bottom: rem(25);
+		overflow: visible;
+		@include media-breakpoint-up(lg) {
+			padding-bottom: rem(54);
+		}
+	}
+	counter-reset: num;
+	&__item {
+		position: relative;
+		padding-top: rem(86.200);
+		padding-left: rem(29);
+		&::before {
+			content: '0'counter(num);
+			counter-increment: num;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-weight: 800;
+			font-size: rem(105);
+			color: rgba(67, 66, 66, 0.05);
+		}
+		.h6 {
+			font-weight: 500;
+			margin-bottom: rem(12);
+		}
+		p {
+			margin-bottom: 0;
+			font-weight: 300;
+		}
+	}
+	.swiper-pagination {
+		top: unset;
+		bottom: 0;
+		height: 1px;
+		background-color: transparent;
+		height: 4px;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 200vw;
+			left: 0;
+			height: 1px;
+			background-color: #D3D3D3;
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sSteps
