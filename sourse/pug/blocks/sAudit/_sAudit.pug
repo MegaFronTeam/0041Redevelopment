@@ -11,7 +11,7 @@ mixin sAudit(data)
 						+e.item
 							+e.title!= title
 							block
-					.col-lg-4
+					.col-md-6.col-lg-4
 						+item('Тип помещения')
 							.row
 								.col-auto
@@ -26,7 +26,7 @@ mixin sAudit(data)
 									+in-c('radio', 'Помещение в жилом доме', 'house')
 								.col-auto
 									+in-c('radio', 'Другое', 'house')
-					.col-lg-4
+					.col-md-6.col-lg-4
 						+item('Площадь помещения')
 							.row
 								.col-auto
@@ -39,22 +39,34 @@ mixin sAudit(data)
 									+in-c('radio', 'До 500 кв м²', 'area')
 								.col-auto
 									+in-c('radio', 'Более 500 кв м²', 'area')
-					.col-lg-4
+					.col-md-6.col-lg-4
 						+item('На каком этапе ')
 							.row
 								.col-auto
 									+in-c('radio', 'Планируется перепланировка', 'stage')
 								.col-auto
 									+in-c('radio', 'Уже выполненна', 'stage')
-					.col-lg-4
+					.col-md-6.col-lg-4
 						+item('Что хотите сделать или уже сделали')
 							+input('Например, объединить 2 комнаты')
-					.col-lg-4
+					.col-md-6.col-lg-4
 						+item('Документы (если есть)')
 							ol
 								li БТИ, экспликация (поэтажный план)
 								li Эскиз планируемых работ (можно от руки)
-					.col-lg-4
+							+upload-field()
+					.col-md-6.col-lg-4
 						+item('Адрес')
 							+input('Город. улица. дом')
+				+e.footer-row.row
+					.col-xl
+						+e.footer-row.row
+							.col-md-6.col-lg-4
+								+input('Ваше имя', 'text', 'Имя')
+							.col-md-6.col-lg-4
+								+input('+7 (999) 999 99 99', 'tel', 'Телефон')
+							.col-md-6.col-lg-4
+								+input('Ваш E-mail', 'email', 'E-mail')
+					+e.col.col-xl
+						+e.btn.btn.btn-primary(href='#') Отправить заявку
 	// end sAudit

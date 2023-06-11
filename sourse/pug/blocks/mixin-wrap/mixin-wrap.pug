@@ -75,3 +75,12 @@ mixin cookies()
 			+e.row-btn
 				+e.btn--js.btn.btn-primary(href='#') I agree
 				+e.btn.btn.btn-outline-primary(href='#') Request call
+
+mixin upload-field()
+	+b.upload-field
+		+e.wrap
+			+e.input-wrap
+				label
+					input.input-upload(type='file' name='file')
+					span Загрузить
+			+e.file-name 
