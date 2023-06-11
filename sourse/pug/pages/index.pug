@@ -8,6 +8,7 @@ include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sOurServices/_sOurServices.pug
 include ../blocks/sAudit/_sAudit.pug
+include ../blocks/sAbout/_sAbout.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -25,6 +26,7 @@ block pagecontent
 		+headerBlock()
 		+sOurServices()
 		+sAudit
+		+sAbout
 	+parts('footer')
 	+parts('modals')
 	//- +cookies()
