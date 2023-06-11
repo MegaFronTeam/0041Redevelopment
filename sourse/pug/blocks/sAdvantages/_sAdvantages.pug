@@ -1,0 +1,23 @@
+mixin sAdvantages(data)
+	// start sAdvantages
+	+b.SECTION.sAdvantages.section#sAdvantages&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Почему нам доверяют?
+				p 6 причин выбрать именно нас
+			+e.row.row
+				mixin advItem(h, t)
+					.col-sm-6.col-lg-4.col-xl-3
+						+e.item
+							+img('img/svg/adv-check.svg')
+							h6!= h
+							p!= t
+				+advItem(`Оплата после согласования`, `Мы&nbsp;не&nbsp;берем предоплату, вы&nbsp;производите оплату только после получения распоряжения о&nbsp;согласованной перепланировки.`)
+				+advItem(`На рынке с 2016 года`, `Ведем деятельность более 7&nbsp;лет, в&nbsp;нашем портфолио более 5000 согласованных перепланировок.`)
+				+advItem(`Гарантия результата`, `Мы&nbsp;уверенны в&nbsp;своих силах, поэтому если беремся за&nbsp;проект, то&nbsp;гарантируем, что перепланировку согласуют в&nbsp;указанные сроки.`)
+				.col-xl-3.d-none.d-xl-block
+				.col-xl-3.d-none.d-xl-block
+				+advItem(`Допуск СРО`, `Имеем все соотвествующие сертификаты и&nbsp;лицензии.`)
+				+advItem(`Согласование на любом этапе`, `От&nbsp;разработки проекта до&nbsp;внесения изменений в&nbsp;ЕГРН и&nbsp;доставки документов из&nbsp;Росреестра`)
+				+advItem(`Согласовываем сложные проекты`, `Не&nbsp;боимся и&nbsp;беремся за&nbsp;крупные и&nbsp;сложные объекты, когда другие отказываются.`)
+	// end sAdvantages
