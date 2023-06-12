@@ -2,8 +2,22 @@ mixin topLine()
 	// start topLine
 	+b.topLine.section#topLine&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 topLine
-				
-			.row
+			+e.row.row
+				.col-auto
+					+e.logo(href='#'): +img('img/svg/footer-logo.svg')
+				.col.d-none.d-lg-block
+					nav
+						ul
+							li: a(href="#") Квартиры 
+							li: a(href="#") Нежилые
+							li: a(href="#") Входная группа
+							li: a(href="#") Согласование
+							li: a(href="#") Приемка квартир
+							li: a(href="#") Самострой
+				.col-auto.ms-auto
+					+e.phone-number
+						+e.tel(href='tel:+74954600924') +7 (495) 460 09 24
+						+e.modal-link(href='#')
+							+icon('arrow-lg-right')
+							| Обратный звонок
 	// end topLine

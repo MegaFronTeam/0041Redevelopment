@@ -1,5 +1,5 @@
 mixin menu-toggle()
-	+b.toggle-menu-mobile--js
+	+b.toggle-menu-mobile--js&attributes(attributes)
 		span
 mixin mob-mnu()
 	-
@@ -16,15 +16,25 @@ mixin mob-mnu()
 			span
 		+e.inner
 			+mnu()
+			+b.topLine
+				nav
+					ul
+						li: a(href="#") Квартиры 
+						li: a(href="#") Нежилые
+						li: a(href="#") Входная группа
+						li: a(href="#") Согласование
+						li: a(href="#") Приемка квартир
+						li: a(href="#") Самострой
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			.row
+			+e.row.row
 				.col
-					+menu-toggle()
-					+mnu()
+					.d-flex.align-items-center
+						+menu-toggle()
+						+mnu().d-none.d-lg-flex
 				.col-auto
 					+e.text Пн-Пт 10:00-18:00
 				.col-auto

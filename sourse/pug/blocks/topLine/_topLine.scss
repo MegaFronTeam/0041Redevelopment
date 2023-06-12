@@ -1,26 +1,80 @@
 
-	// start .topLine
-	.topLine {
-		 
-		// --sPT: #{rem()};
-	// --sPB: #{rem()};
+// start .topLine
+.topLine {
+	--sPT: #{rem(16)};
+	--sPB: #{rem(16)};
 	// --sTPB: #{rem()};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(43)};
+		--sPB: #{rem(43)};
+	}
 	&__row{
-		// --bs-gutter-x: #{rem()};
-		--bs-gutter-y: var(--bs-gutter-x);
+		--bs-gutter-x: #{rem(20)};
+		// --bs-gutter-y: var(--bs-gutter-x);
 
+		align-items: center;
 	}
-	.section-title{
-		
+	&__logo {
+		img {
+			width: 100%;
+			max-width: rem(51);
+			@include media-breakpoint-up(xl) {
+				max-width: rem(71);
+			}
+		}
 	}
-	&__col{
-
+	ul {
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+		margin-bottom: 0;
+		@include roww('20px', 'm');
+		@include media-breakpoint-up(xl) {
+			--bs-gutter-x: #{rem(40)};
+		}
+		@include media-breakpoint-up(xxl) {
+			--bs-gutter-x: #{rem(54)};
+		}
+		a {
+			font-size: rem(14);
+			color: #fff;
+			border-bottom: 1px solid #fff;
+			padding-bottom: rem(2);
+			&:hover {
+				border-bottom-color: $primary;
+			}
+		}
 	}
-	&__item{
-
+	&__phone-number {
+		text-align: right;
 	}
-	&__slide{
-		height: auto;
+	&__tel {
+		font-size: rem(16);
+		color: #fff;
+		margin-bottom: rem(5);
+		font-weight: 800;
+		@include media-breakpoint-up(lg) {
+			font-size: rem(20);
+		}
+		&:hover {
+			color: $gray-300;
+		}
+	}
+	&__modal-link {
+		display: flex;
+		align-items: center;
+		font-size: rem(14);
+		line-height: 1.21;
+		color: #fff;
+		justify-content: flex-end;
+		&:hover {
+			color: $gray-300;
+		}
+		.icon {
+			flex: 0 0 auto;
+			font-size: rem(8);
+			margin-right: rem(8);
+		}
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

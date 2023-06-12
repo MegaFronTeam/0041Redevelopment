@@ -1,22 +1,54 @@
 
+<div class="menu-mobile menu-mobile--js">
+	<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+	</div>
+	<div class="menu-mobile__inner">
+		<nav>
+			<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+				<li class="menu-item" itemprop="item"><a href="#headerBlock" itemprop="url">Главная</a></li>
+				<li class="menu-item" itemprop="item"><a href="#sOurServices" itemprop="url">Все услуги</a></li>
+				<li class="menu-item" itemprop="item"><a href="#sAbout" itemprop="url">О компании</a></li>
+				<li class="menu-item" itemprop="item"><a href="#sPortfolio" itemprop="url">Наши проекты</a></li>
+				<li class="menu-item" itemprop="item"><a href="#sBlogBlock" itemprop="url">Новости</a></li>
+				<li class="menu-item" itemprop="item"><a href="#sContact" itemprop="url">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="topLine">
+			<nav>
+				<ul>
+					<li><a href="#">Квартиры </a></li>
+					<li><a href="#">Нежилые</a></li>
+					<li><a href="#">Входная группа</a></li>
+					<li><a href="#">Согласование</a></li>
+					<li><a href="#">Приемка квартир</a></li>
+					<li><a href="#">Самострой</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<!--  мобильное меню-->
 <!-- start header-->
-<header class="header" id="header">
+<header class="header header--js" id="header">
 	<!-- start top-nav-->
 	<div class="top-nav block-with-lazy">
 		<div class="container">
-			<div class="row">
+			<div class="top-nav__row row">
 				<div class="col">
-					<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+					<div class="d-flex align-items-center">
+						<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+						</div>
+						<nav>
+							<ul class="menu d-none d-lg-flex" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+								<li class="menu-item" itemprop="item"><a href="#headerBlock" itemprop="url">Главная</a></li>
+								<li class="menu-item" itemprop="item"><a href="#sOurServices" itemprop="url">Все услуги</a></li>
+								<li class="menu-item" itemprop="item"><a href="#sAbout" itemprop="url">О компании</a></li>
+								<li class="menu-item" itemprop="item"><a href="#sPortfolio" itemprop="url">Наши проекты</a></li>
+								<li class="menu-item" itemprop="item"><a href="#sBlogBlock" itemprop="url">Новости</a></li>
+								<li class="menu-item" itemprop="item"><a href="#sContact" itemprop="url">Контакты</a></li>
+							</ul>
+						</nav>
 					</div>
-					<nav>
-						<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
-						</ul>
-					</nav>
 				</div>
 				<div class="col-auto">
 					<div class="top-nav__text">Пн-Пт 10:00-18:00
@@ -33,10 +65,35 @@
 	<!-- start topLine-->
 	<div class="topLine section" id="topLine">
 		<div class="container">
-			<div class="section-title text-center">
-				<h2>topLine</h2>
+			<div class="topLine__row row">
+				<div class="col-auto">
+					<a class="topLine__logo" href="#"><img src="img/svg/footer-logo.svg" alt="" loading="lazy"/>
+					</a>
+				</div>
+				<div class="col d-none d-lg-block">
+					<nav>
+						<ul>
+							<li><a href="#">Квартиры </a></li>
+							<li><a href="#">Нежилые</a></li>
+							<li><a href="#">Входная группа</a></li>
+							<li><a href="#">Согласование</a></li>
+							<li><a href="#">Приемка квартир</a></li>
+							<li><a href="#">Самострой</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-auto ms-auto">
+					<div class="topLine__phone-number">
+						<a class="topLine__tel" href="tel:+74954600924">+7 (495) 460 09 24
+						</a>
+						<a class="topLine__modal-link" href="#">
+							<svg class="icon icon-arrow-lg-right ">
+								<use xlink:href="img/svg/sprite.svg#arrow-lg-right"></use>
+							</svg>Обратный звонок
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="row"></div>
 		</div>
 	</div>
 	<!-- end topLine-->

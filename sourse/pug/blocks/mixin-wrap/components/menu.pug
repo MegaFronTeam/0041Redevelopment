@@ -1,7 +1,7 @@
 
 mixin mnu()
 	nav
-		ul.menu(itemscope itemtype="http://schema.org/SiteNavigationElement")
+		ul.menu(itemscope itemtype="http://schema.org/SiteNavigationElement")&attributes(attributes)
 			each link in nav
 				li.menu-item(itemprop="item" ): a(href= link.url itemprop="url")= link.name
 				if link.subnav

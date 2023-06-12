@@ -4,7 +4,35 @@
 	// --sTPB: #{rem()};
 	padding-bottom: var(--sPB);
 	padding-top: var(--sPT);
-	color: #fff;
+	border-bottom: 1px solid #828284;
+	nav {
+		width: 100%;
+	}
+	&__row {
+		--bs-gutter-x: #{rem(20)};
+
+		align-items: center;
+		@include media-breakpoint-up(xl) {
+			--bs-gutter-x: #{rem(30)};
+		}
+		@include media-breakpoint-up(xxl) {
+			--bs-gutter-x: #{rem(44)};
+		}
+	}
+	&__text {
+		font-size: rem(10);
+		line-height: 1.21;
+		color: #CFD0CF;
+		display: inline-block;
+		@include media-breakpoint-up(sm) {
+			font-size: rem(14);
+		}
+		&[href] {
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
 	@include media-breakpoint-up(md) {}
 
 	@include media-breakpoint-up(sm) {}
