@@ -10,6 +10,7 @@ include ../blocks/sOurServices/_sOurServices.pug
 include ../blocks/sAudit/_sAudit.pug
 include ../blocks/sAbout/_sAbout.pug
 include ../blocks/sAdvantages/_sAdvantages.pug
+include ../blocks/sPortfolio/_sPortfolio.pug
 include ../blocks/sSteps/_sSteps.pug
 include ../blocks/sFaq/_sFaq.pug
 
@@ -30,7 +31,8 @@ block pagecontent
 		+sOurServices()
 		+sAudit
 		+sAbout
-		+sAdvantages(sAdvantages)
+		+sAdvantages()
+		+sPortfolio
 		+sSteps
 		+sFaq
 	+parts('footer')

@@ -1,0 +1,62 @@
+mixin portfolio-item(img, area, h, time, price)
+	// start product-card
+	+b.portfolio-item
+		+e.img-wrap
+			+img(`img/portfolio-item-${img}.jpg`, 'bg')
+		+e.caption
+			+e.label-wrap
+				.row
+					.col-auto: +e.label--type.btn Квартира
+					.col-auto: +e.label--area.btn!= area
+			h6!= h
+			if block
+				block
+			else
+				ul
+					li Из&nbsp;5&nbsp;комнат в&nbsp;5&nbsp;комнат со&nbsp;своими санузлами и&nbsp;кухнями
+					li &bull; Демонтаж ненесущих межкомнатных перегородок;
+					li &bull; Монтаж ненесущих межкомнатных перегородок;
+					li &bull; Несущие конструкции не&nbsp;затрагиваются;
+					li &bull; Увеличение мокрых зон за&nbsp;счет жилых помещений;
+					li &bull; Изменение систем водоснабжения и&nbsp;канализации.
+			.row
+				.col-auto
+					+e.row--sm.row
+						.col-auto
+							+e.time!= time
+						+e.col.col-auto
+							+e.price!= price
+				.col-xl-auto.order-xl-first
+					+e.btn.btn.btn-sm.btn-primary(href="#") Подробнее
+				
+	// end product-card
+
+mixin sPortfolio(data)
+	// start sPortfolio
+	+b.SECTION.sPortfolio.section#sPortfolio&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Наши проекты
+				p Примеры выполненных перепланировок квартир и&nbsp;нежилых помещений
+			+e.row.row
+				- for (var x = 0; x < 2; x++)
+					.col-md-6.col-lg-4
+						+portfolio-item(1, `97&nbsp;кв.&nbsp;м&sup2;`, `Из&nbsp;коммуналки в&nbsp;апарт-отель`, `75&nbsp;дней`, `580&nbsp;000₽`)
+					.col-md-6.col-lg-4
+						+portfolio-item(2, `160&nbsp;кв.&nbsp;м&sup2;`, `Перепланировка квартиры`, `35&nbsp;дней`, `250&nbsp;000₽`)
+							ul
+								li Какие работы были выполненны:
+								li &bull; Перенос во&nbsp;вспомогательных помещениях дополнительного санитарно-технического оборудования.
+								li &bull; Установка раковины и&nbsp;плиты на&nbsp;кухне
+								li &bull; Изменение формы оконных и&nbsp;дверных проемов балконов
+								li &bull; Изменение конструкции полов
+								li &bull; Устройство и&nbsp;разборка не&nbsp;несущих перегородок, демонтаж и&nbsp;установка дверного блока и&nbsp;проема
+					.col-md-6.col-lg-4
+						+portfolio-item(3, `47&nbsp;кв.&nbsp;м&sup2;`, `Демонтаж несущих перегородок`, `28&nbsp;дней`, `300&nbsp;000₽`)
+							ul
+								li &bull; Демонтаж и&nbsp;устройство ненесущих перегородок, в&nbsp;том числе с&nbsp;дверными блоками;
+								li &bull; Перенос дверного проема в&nbsp;ненесущей перегородке;
+								li &bull; Установка оборудования в&nbsp;соответствии с&nbsp;проектным решением;
+								li &bull; Изменение конструкции полов без затрагивания межэтажного перекрытия, в&nbsp;том числе с&nbsp;устройством гидроизоляции
+			
+	// end sPortfolio

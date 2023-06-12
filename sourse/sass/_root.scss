@@ -3,7 +3,7 @@
 	--animate-delay: 1.2s;
 	--bs-body-font-size: #{$em-base};
 
-	@include media-breakpoint-up(md) {
+	@include media-breakpoint-up(lg) {
 
 		--sPT: #{rem(80)};
 		--sPB: #{rem(90)};
