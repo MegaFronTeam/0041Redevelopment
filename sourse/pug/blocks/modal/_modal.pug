@@ -3,6 +3,23 @@ mixin modal()
 	//  start modals
 	//- a(href="modal-call").link-modal-js modal-call 
 	div(id="modal-call"  style="display: none" )
-		+b.modal-win
-			
+		+b.modal-win--form
+			+form-wrap
+				.text-center
+					.h5.form-data Бесплатная консультация
+					.modal-win__subtitle Оставьте заявку и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;ближайшее время
+				+input("Имя", 'tel')(required)  
+				+input("Телефон", 'tel')(required)  
+				+e.BUTTON.btn.btn.btn-primary(type="submit"  ) Получить консультацию
+				+policy()
 	// #modal-call
+
+	div(id="modal-thanks"  style="display: none" )
+		+b.modal-win--thanks
+			+e.content
+				.h5 Спасибо!
+				+e.subtitle.mb-0 Ваша заявка принята в&nbsp;работу, в&nbsp;ближайшие время наш специалист свяжется с&nbsp;вами!
+
+	// #modal-thanks
+			
+	// end modals

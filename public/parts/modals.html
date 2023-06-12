@@ -1,7 +1,42 @@
 
 <!--  start modals-->
 <div id="modal-call" style="display: none">
-	<div class="modal-win">
+	<div class="modal-win modal-win--form">
+		<div class="form-wrap">
+			<form>
+				<input name="example-input-field" type="hidden"/>
+				<input class="order" name="order" type="hidden" value="Modal window was opened from `Form` block"/>
+				<input class="utm_source" name="utm_source" type="hidden"/>
+				<input class="utm_term" name="utm_term" type="hidden"/>
+				<input class="utm_medium" name="utm_medium" type="hidden"/>
+				<input class="utm_campaign" name="utm_campaign" type="hidden"/>
+				<div class="text-center">
+					<div class="h5 form-data">Бесплатная консультация</div>
+					<div class="modal-win__subtitle">Оставьте заявку и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;ближайшее время</div>
+				</div>
+				<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="tel" type="tel" placeholder="Имя" required="required"/> 
+				</div>
+				<!-- +e.input-wrap-->
+				<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" name="tel" type="tel" placeholder="Телефон" required="required"/> 
+				</div>
+				<!-- +e.input-wrap-->
+				<button class="form-wrap__btn btn btn-primary" type="submit">Получить консультацию
+				</button>
+				<div class="form-wrap__policy">Нажимая «Получить консультацию», вы соглашаетесь предоставить Вашу информацию на обработку.
+				</div>
+			</form>
+		</div>
 	</div>
 </div>
 <!-- #modal-call-->
+<div id="modal-thanks" style="display: none">
+	<div class="modal-win modal-win--thanks">
+		<div class="modal-win__content">
+			<div class="h5">Спасибо!</div>
+			<div class="modal-win__subtitle mb-0">Ваша заявка принята в&nbsp;работу, в&nbsp;ближайшие время наш специалист свяжется с&nbsp;вами!
+			</div>
+		</div>
+	</div>
+</div>
+<!-- #modal-thanks-->
+<!-- end modals-->
