@@ -457,6 +457,11 @@ function eventHandler() {
 			}
 		}
 	});
+
+	var msnry = new Masonry('.grid--js', {
+		itemSelector: '.grid__item',
+		horizontalOrder: true
+	});
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

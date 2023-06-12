@@ -13,6 +13,7 @@ include ../blocks/sAdvantages/_sAdvantages.pug
 include ../blocks/sPortfolio/_sPortfolio.pug
 include ../blocks/sSteps/_sSteps.pug
 include ../blocks/sFaq/_sFaq.pug
+include ../blocks/sBlogBlock/_sBlogBlock.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -35,6 +36,8 @@ block pagecontent
 		+sPortfolio
 		+sSteps
 		+sFaq
+		+sBlogBlock
+		+sContact
 	+parts('footer')
 	+parts('modals')
 	//- +cookies()

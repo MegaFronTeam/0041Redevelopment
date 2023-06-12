@@ -89,6 +89,7 @@
 		height: 1px;
 		background-color: transparent;
 		height: 4px;
+		--swiper-pagination-color: #{$primary};
 		&::before {
 			content: '';
 			display: block;
