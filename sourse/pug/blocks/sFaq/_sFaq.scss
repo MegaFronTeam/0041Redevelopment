@@ -100,7 +100,7 @@
 		&__item {
 			border: 1px solid #EAEAEA;
 			border-radius: 14px;
-			padding: rem(25) rem(35) rem(25) rem(32);
+			// padding: rem(25) rem(35) rem(25) rem(32);
 			position: relative;
 			&::after {
 				@include mt;
@@ -126,6 +126,7 @@
 			font-weight: 500;
 			font-size: rem(18);
 			cursor: pointer;
+			padding: rem(25) rem(35) rem(25) rem(32);
 			@include media-breakpoint-up(lg) {
 				font-size: rem(20);
 			}
@@ -134,6 +135,7 @@
 			display: none;
 			padding-top: rem(10);
 			color: #9B9B9B;
+			padding: rem(10) rem(35) rem(25) rem(32);
 			p {
 				margin-bottom: 0;
 				line-height: 1.5;

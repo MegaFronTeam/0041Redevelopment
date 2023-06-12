@@ -62,12 +62,12 @@ const JSCCommon = {
 					// console.log(modal.querySelector(elem).tagName)
 				}
 			}
-			setValue(data.title, '.modal-title');
-			setValue(data.pragraph, '.pragraph');
-			setValue(data.img, '.modal-img');
-			setValue(data.text, '.after-headline');
-			setValue(data.btn, '.btn');
-			setValue(data.order, '.order');
+			// setValue(data.title, '.modal-title');
+			// setValue(data.pragraph, '.pragraph');
+			// setValue(data.img, '.modal-img');
+			// setValue(data.text, '.after-headline');
+			// setValue(data.btn, '.btn');
+			// setValue(data.order, '.order');
 		})
 	},
 	// /modalCall
@@ -336,7 +336,7 @@ function eventHandler() {
 	// JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
 	JSCCommon.inputMask();
-	JSCCommon.sendForm();
+	// JSCCommon.sendForm();
 	JSCCommon.heightwindow();
 	JSCCommon.makeDDGroup();
 	JSCCommon.imgToSVG();
@@ -399,34 +399,6 @@ function eventHandler() {
 			// }
 		},
 	}
-	
-	const swiperbreadcrumb = new Swiper('.breadcrumb-slider--js', {
-		slidesPerView: 'auto',
-		freeMode: true,
-		watchOverflow: true
-	});
-	
-	const sWhatPatientsSaySwiper = new Swiper('.sWhatPatientsSay__slider--js', {
-		slidesPerView: 1,
-		spaceBetween: 20,
-		navigation: {
-			nextEl: '.sWhatPatientsSay__arrow-wrap .swiper-button-next',
-			prevEl: '.sWhatPatientsSay__arrow-wrap .swiper-button-prev',
-		},
-		breakpoints: {
-			768: {
-				slidesPerView: 2,
-				spaceBetween: 30,
-			}
-		}
-	});
-
-	// modal window
-
-	$('.cookies__btn--js').on('click', function(e) {
-		e.preventDefault();
-		$('.cookies').fadeOut();
-	})
 
 	function inputFile(){
 		if (document.querySelector('.upload-field')){
