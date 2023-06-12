@@ -2,8 +2,46 @@ mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContact
-				
+			+b.section-title
+				h2 Контакты 
+			mixin wrap()
+				+e.wrap 
+					block
 			+e.row.row
+				.col-md-6.col-lg.col-xl-auto
+					+wrap()
+						+e.item
+							+img('img/svg/phone-call.svg')
+							div
+								span Отдел продаж:
+								+e.link(href="tel:+74956645680") +7 (495)664 56 80 
+				.col-md-6.col-lg.col-xl
+					+wrap()
+						+e.item
+							+img('img/svg/mail.svg')
+							div
+								span E-mail:
+								+e.link(href="mailto:info@pryamoepravo.ru") info@pryamoepravo.ru
+				.col-md-6.col-lg.col-xl-auto
+					+wrap()
+						+e.item
+							+img('img/svg/clock.svg')
+							div
+								span Время работы:
+								+e.link Пн-вс: 10:00 — 18:00
+			+e.body-row.row
+				+e.col.col-lg
+					+wrap()
+				.col-lg-auto.ms-lg-auto
+					+e.have-question
+						h5 Остались вопросы?
+						p Оставьте заявку и мы постараемся вам помочь
+						+e.btn.btn.btn-primary(href='#') Задать вопрос
+						+soc
+							+item-sos
+								+icon('telegram')
+							+item-sos
+								+img('img/svg/wa.svg').img-svg-js.icon
+	// end sFaq
+			+e.map: iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b213784e38e57660d06ffebe59576484fd8b24a515800df2cd346bab8ebe8c3&amp;source=constructor" frameborder="0")
 	// end sContact
