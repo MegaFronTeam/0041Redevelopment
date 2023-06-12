@@ -144,6 +144,7 @@
 		}
 	}
 	&__label {
+		font-family: $font-family-monospace;
 		--bs-btn-padding-x: #{rem(20)};
 		--bs-btn-padding-y: #{rem(10)};
 		--bs-btn-font-size: #{rem(12)};
