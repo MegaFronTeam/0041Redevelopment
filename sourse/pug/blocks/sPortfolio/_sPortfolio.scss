@@ -2,7 +2,11 @@
 .sPortfolio {
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
+	--sTPB: #{rem(24)};
+	@include media-breakpoint-up(lg) {
+		--sTPB: #{rem(45)};
+
+	}
 	&__row {
 		--bs-gutter-x: #{rem(20)};
 		--bs-gutter-y: var(--bs-gutter-x);
@@ -25,6 +29,24 @@
 	&__col {
 	}
 	&__item {
+	}
+	&__btn {
+		--bs-btn-color: ${$body-color};
+    --bs-btn-border-color: #{$gray-300};
+		display: flex;
+		align-items: center;
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		@include media-breakpoint-up(lg) {
+			--bs-btn-font-size: #{rem(18)};
+			--bs-btn-padding-y: #{rem(23)};
+		}
+
+		.icon {
+			font-size: rem(16);
+			margin-left: rem(10);
+		}
 	}
 
 	@include media-breakpoint-up(xl) {
@@ -61,7 +83,13 @@
 		@include block(380, 248);
 		overflow: hidden;
 		background-color: #d9d9d9;
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
 		img {
+			@include mt;
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -74,6 +102,11 @@
 		padding: 5.5%;
 		@include media-breakpoint-up(xxl) {
 			padding: 7.22% 8.56% 5.35%;
+		}
+		.h6 {
+			&:hover {
+				color: $link-hover-color;
+			}
 		}
 		& > .row {
 			--bs-gutter-x: #{rem(16)};

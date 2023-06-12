@@ -1,14 +1,14 @@
 mixin portfolio-item(img, area, h, time, price)
 	// start product-card
 	+b.portfolio-item
-		+e.img-wrap
+		+e.img-wrap(href="#")
 			+img(`img/portfolio-item-${img}.jpg`, 'bg')
 		+e.caption
 			+e.label-wrap
 				.row
 					.col-auto: +e.label--type.btn Квартира
 					.col-auto: +e.label--area.btn!= area
-			h6!= h
+			a.h6(href="#")!= h
 			if block
 				block
 			else
@@ -58,5 +58,8 @@ mixin sPortfolio(data)
 								li &bull; Перенос дверного проема в&nbsp;ненесущей перегородке;
 								li &bull; Установка оборудования в&nbsp;соответствии с&nbsp;проектным решением;
 								li &bull; Изменение конструкции полов без затрагивания межэтажного перекрытия, в&nbsp;том числе с&nbsp;устройством гидроизоляции
-			
+				.col-12
+					+e.btn.btn.btn-outline-dark(href='#') 
+						| Больше проектов
+						+icon('arrow-more')
 	// end sPortfolio
