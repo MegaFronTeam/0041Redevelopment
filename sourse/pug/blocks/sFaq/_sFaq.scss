@@ -115,8 +115,9 @@
 				background-size: contain;
 				top: rem(13);
 				right: rem(16);
+				pointer-events: none;
 			}
-			&.active {
+			&.active, &:hover {
 				&::after {
 					transform: rotate(-45deg);
 				}
