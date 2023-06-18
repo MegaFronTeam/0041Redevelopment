@@ -1,10 +1,12 @@
 // start .sAdvantages
 .sAdvantages {
-	// --sPT: #{rem()};
-	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
+	--sPT: #{rem(30)};
+	--sPB: #{rem(30)};
+	--sTPB: #{rem(30)};
 	@include media-breakpoint-up(xl) {
 		--sTPB: #{rem(60)};
+		--sPT: #{rem(120)};
+		--sPB: #{rem(60)};
 	}
 	&__row {
 		// --bs-gutter-x: #{rem()};

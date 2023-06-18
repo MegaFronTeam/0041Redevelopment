@@ -53,6 +53,9 @@
 		}
 		p {
 			margin-bottom: 0;
+			@include media-breakpoint-up(lg) {
+				font-size: rem(20);
+			}
 		}
 	}
 	&__inner-row {

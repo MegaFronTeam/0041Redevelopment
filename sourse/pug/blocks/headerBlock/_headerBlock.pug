@@ -1,4 +1,4 @@
-mixin headerBlock()
+mixin headerBlock(title='Согласование перепланировки любой сложности в Москве и МО')
 	// start headerBlock
 	+b.headerBlock.section#headerBlock.bg-wrap&attributes(attributes)
 		+img('img/headerBlock-bg-1.jpg', 'bg').picture-bg
@@ -6,7 +6,7 @@ mixin headerBlock()
 			+e.row.row
 				+e.col.col
 					+b.section-title
-						h1 Согласование перепланировки любой сложности в Москве и МО
+						h1!= title
 						p Оплата после согласование перепланировки - прописываем в договоре!
 					+e.inner-row.row
 						mixin item(icon, title, text)

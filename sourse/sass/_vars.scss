@@ -1454,12 +1454,12 @@ $toast-header-border-color:         $toast-border-color !default;
 // Badges
 
 // scss-docs-start badge-variables
-$badge-font-size:                   .75em !default;
-$badge-font-weight:                 $font-weight-bold !default;
+$badge-font-size:                   rem(12) !default;
+$badge-font-weight:                 500 !default;
 $badge-color:                       $white !default;
-$badge-padding-y:                   .35em !default;
-$badge-padding-x:                   .65em !default;
-$badge-border-radius:               $border-radius !default;
+$badge-padding-y:                   rem(11.600) !default;
+$badge-padding-x:                   rem(19) !default;
+$badge-border-radius:               rem(16) !default;
 // scss-docs-end badge-variables
 
 
@@ -1603,14 +1603,14 @@ $figure-caption-color:              var(--#{$prefix}secondary-color) !default;
 
 // scss-docs-start breadcrumb-variables
 $breadcrumb-font-size:              null !default;
-$breadcrumb-padding-y:              0 !default;
+$breadcrumb-padding-y:              rem(19.200) !default;
 $breadcrumb-padding-x:              0 !default;
-$breadcrumb-item-padding-x:         .5rem !default;
-$breadcrumb-margin-bottom:          1rem !default;
+$breadcrumb-item-padding-x:         rem(6) !default;
+$breadcrumb-margin-bottom:          0 !default;
 $breadcrumb-bg:                     null !default;
-$breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
-$breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
-$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-divider-color:          #151515 !default;
+$breadcrumb-active-color:           #151515 !default;
+$breadcrumb-divider:                quote("—") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
 // scss-docs-end breadcrumb-variables

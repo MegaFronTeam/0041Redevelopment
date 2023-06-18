@@ -122,8 +122,14 @@
 					transform: rotate(-45deg);
 				}
 			}
+			&.active {
+				.dd-group__head {
+					padding-bottom: 0;
+				}
+			}
 		}
 		&__head {
+			@include mt;
 			font-weight: 500;
 			font-size: rem(18);
 			cursor: pointer;

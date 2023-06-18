@@ -71,3 +71,27 @@ mixin sAudit(data)
 					+e.col.col-xl
 						+e.btn.btn.btn-primary(href='#') Отправить заявку
 	// end sAudit
+
+mixin sAudit2(data)
+	// start sAudit
+	+b.SECTION.sAudit--2.section#sAudit&attributes(attributes)
+		.container
+			+e.wrap
+				+b.section-title
+					.badge.badge-primary Бесплатная консультация
+					h3 Анализ вашей перепланировки от&nbsp;ведущих специалистов в&nbsp;области градостроительного права
+					p Анализ вашей перепланировки от&nbsp;ведущих специалистов в&nbsp;области градостроительного права
+				+e.footer-wrap
+					+e.footer-row.row
+						.col-xl
+							+e.footer-row.row
+								.col-md-6.col-lg-4
+									+input('Ваше имя', 'text', 'Имя')
+								.col-md-6.col-lg-4
+									+input('+7 (999) 999 99 99', 'tel', 'Телефон')
+										+img('img/svg/rus-flag.svg').img-svg-js
+								.col-md-6.col-lg-4
+									+input('Ваш E-mail', 'email', 'E-mail')
+						+e.col.col-xl
+							+e.btn.btn.btn-primary(href='#') Отправить заявку
+	// end sAudit

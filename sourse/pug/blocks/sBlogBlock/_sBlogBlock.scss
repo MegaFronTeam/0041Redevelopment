@@ -15,7 +15,11 @@
 
 	}
 	.section-title{
-		
+		p {
+			@include media-breakpoint-up(lg) {
+				font-size: rem(20);
+			}
+		}
 	}
 	&__col{
 

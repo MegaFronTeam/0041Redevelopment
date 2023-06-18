@@ -109,7 +109,7 @@
 
 .breadcrumb-item{
 	width: auto;
-	margin-right: rem(32);
+	// margin-right: rem(32);
 }
 
 .upload-field {
@@ -147,4 +147,49 @@
 }
 .input-upload {
 	display: none;
+}
+
+.page-head {
+	border-bottom: 1px solid #D3D3D3;
+	.swiper {
+		overflow: visible;
+	}
+	.breadcrumb {
+		flex-wrap: nowrap;
+		background-color: #f5f5f5;
+		&-item {
+			display: flex;
+			align-items: center;
+			a {
+				font-weight: 300;
+				line-height: 1.8;
+				font-size: rem(14);
+				@include media-breakpoint-up(lg) {
+					font-size: rem(16);
+				}
+				&:not(:hover) {
+					color: #151515;
+				}
+			}
+		}
+	}
+}
+
+.badge {
+	@include media-breakpoint-down(lg) {
+		--bs-badge-padding-x: #{rem(14)};
+    --bs-badge-padding-y: #{rem(8)};
+	}
+	&-primary {
+		background-color: $primary;
+	}
+}
+
+.btn {
+	--bs-btn-padding-y: #{rem(14.800)};
+	--bs-btn-font-size: #{rem(14)};
+	@include media-breakpoint-up(lg) {
+    --bs-btn-padding-y: #{rem(16)};
+		--bs-btn-font-size: #{rem(16)};
+	}
 }

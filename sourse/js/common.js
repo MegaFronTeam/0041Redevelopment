@@ -333,7 +333,7 @@ const $ = jQuery;
 
 function eventHandler() { 
 	JSCCommon.modalCall();
-	// JSCCommon.tabscostume('tabs');
+	JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
 	JSCCommon.inputMask();
 	// JSCCommon.sendForm();
@@ -433,11 +433,14 @@ function eventHandler() {
 		}
 	});
 
-	var msnry = new Masonry('.grid--js', {
-		itemSelector: '.grid__item',
-		horizontalOrder: true
+	const swiperbreadcrumb = new Swiper('.breadcrumb-slider--js', {
+		slidesPerView: 'auto',
+		freeMode: true,
+		watchOverflow: true
 	});
+
 };
+
 if (document.readyState !== 'loading') {
 	eventHandler();
 } else {

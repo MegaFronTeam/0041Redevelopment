@@ -1,11 +1,12 @@
 // start .sPortfolio
 .sPortfolio {
-	// --sPT: #{rem()};
-	// --sPB: #{rem()};
+	--sPT: #{rem(30)};
+	--sPB: #{rem(30)};
 	--sTPB: #{rem(24)};
 	@include media-breakpoint-up(lg) {
 		--sTPB: #{rem(45)};
-
+		--sPT: #{rem(60)};
+		--sPB: #{rem(60)};
 	}
 	&__row {
 		--bs-gutter-x: #{rem(20)};
