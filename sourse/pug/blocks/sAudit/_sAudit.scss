@@ -172,11 +172,15 @@
 		}
 	}
 	&--2 {
+		--sPT: #{rem(30)};
+		--sPB: #{rem(30)};
 		--sTPB: #{rem(30)};
 		box-shadow: none;
 		background-color: #fff;
 		@include media-breakpoint-up(lg) {
 			--sTPB: #{rem(68)};
+			--sPT: #{rem(94)};
+			--sPB: #{rem(40)};
 		}
 		.sAudit {
 			&__wrap {
