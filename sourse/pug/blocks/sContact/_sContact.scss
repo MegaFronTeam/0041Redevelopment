@@ -107,6 +107,11 @@
 	}
 	&__have-question {
 		max-width: rem(232);
+		@include media-breakpoint-down(lg) {
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
 		h5 {
 			margin-bottom: rem(3);
 		}
@@ -124,6 +129,9 @@
 		}
 	}
 	.soc {
+		@include media-breakpoint-down(lg) {
+			justify-content: center;
+		}
 		&__item {
 			width: rem(36);
 			height: rem(36);

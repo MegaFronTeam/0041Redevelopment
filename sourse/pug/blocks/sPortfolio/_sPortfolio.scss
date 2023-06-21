@@ -31,24 +31,24 @@
 	}
 	&__item {
 	}
-	&__btn {
-		--bs-btn-color: ${$body-color};
-    --bs-btn-border-color: #{$gray-300};
-		display: flex;
-		align-items: center;
-		width: 100%;
-		text-align: center;
-		justify-content: center;
-		@include media-breakpoint-up(lg) {
-			--bs-btn-font-size: #{rem(18)};
-			--bs-btn-padding-y: #{rem(23)};
-		}
+	// &__btn {
+	// 	--bs-btn-color: ${$body-color};
+  //   --bs-btn-border-color: #{$gray-300};
+	// 	display: flex;
+	// 	align-items: center;
+	// 	width: 100%;
+	// 	text-align: center;
+	// 	justify-content: center;
+	// 	@include media-breakpoint-up(lg) {
+	// 		--bs-btn-font-size: #{rem(18)};
+	// 		--bs-btn-padding-y: #{rem(23)};
+	// 	}
 
-		.icon {
-			font-size: rem(16);
-			margin-left: rem(10);
-		}
-	}
+	// 	.icon {
+	// 		font-size: rem(16);
+	// 		margin-left: rem(10);
+	// 	}
+	// }
 
 	@include media-breakpoint-up(xl) {
 	}

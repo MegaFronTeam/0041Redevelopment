@@ -64,7 +64,7 @@
 	&__item {
 		position: relative;
 		padding-left: rem(38);
-		svg {
+		img {
 			color: $green;
 			font-size: rem(25);
 			width: 1em;
@@ -72,9 +72,6 @@
 			position: absolute;
 			top: rem(4);
 			left: 0;
-			path {
-				fill: currentColor;
-			}
 		}
 		h3 {
 			font-weight: 300;

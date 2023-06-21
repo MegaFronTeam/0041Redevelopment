@@ -17,7 +17,7 @@ mixin topLine()
 				.col-auto.ms-auto
 					+e.phone-number
 						+e.tel(href='tel:+74954600924') +7 (495) 460 09 24
-						+e.modal-link(href='#' data-src='modal-call' data-fancybox="modal")
+						+e.modal-link.btn(type='button' data-src='modal-call' data-fancybox="modal")
 							+icon('arrow-lg-right')
 							| Обратный звонок
 	// end topLine

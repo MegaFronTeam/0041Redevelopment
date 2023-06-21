@@ -192,4 +192,31 @@
     --bs-btn-padding-y: #{rem(16)};
 		--bs-btn-font-size: #{rem(16)};
 	}
+	&-primary {
+		--bs-btn-hover-bg: #433fe6;
+    --bs-btn-hover-border-color: #433fe6;
+	}
+}
+
+.gray-outline-btn {
+	--bs-btn-color: #{$body-color};
+	--bs-btn-border-color: #{$gray-300};
+	display: flex;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	@include media-breakpoint-up(lg) {
+		--bs-btn-font-size: #{rem(18)};
+		--bs-btn-padding-y: #{rem(23)};
+	}
+
+	.icon {
+		font-size: rem(16);
+		margin-left: rem(10);
+	}
+	img {
+		flex: 0 0 auto;
+		margin-left: rem(10);
+	}
 }
