@@ -21,6 +21,12 @@
 			}
 			.top-nav {
 				background-color: $gray-900;
+				&__col {
+					display: none !important;
+				}
+				&__line {
+					display: none;
+				}
 			}
 		}
 		&.fixed-show{

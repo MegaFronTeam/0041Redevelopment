@@ -50,15 +50,14 @@
 		@include media-breakpoint-up(xl) {
 			padding-left: rem(58);
 		}
-		img {
-			width: 100%;
-			max-width: rem(24);
+		.icon {
+			font-size: rem(24);
 			position: absolute;
 			top: 50%;
 			left: 0;
 			transform: translateY(-50%);
 			@include media-breakpoint-up(xl) {
-				max-width: rem(38);
+				font-size: rem(38);
 			}
 		}
 		span {

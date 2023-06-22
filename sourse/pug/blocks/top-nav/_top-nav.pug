@@ -39,12 +39,23 @@ mixin top-nav()
 					+e.text Пн-Пт 10:00-18:00
 				.col-auto
 					+e.text(href='mailto:info@pryamoepravo.ru') info@pryamoepravo.ru
-				//- .col.order-lg-0.order-last
-				//- 	.menu-mobile.menu-mobile--js
-				//- 		.menu-mobile__inner
-				//- 			+menu-toggle()
-				//- 			+mnu()
-					
-				//- .col-auto.d-lg-none
-				//- 	+menu-toggle()
+				.col-12.p-0.m-0: +e.line
+				+e.col.col-auto
+					+e.logo(href='/'): +img('img/svg/footer-logo.svg')
+				+e.col.col.d-none.d-lg-block
+					+e.navigation
+						nav
+							ul
+								li: a(href="#") Квартиры 
+								li: a(href="#") Нежилые
+								li: a(href="#") Входная группа
+								li: a(href="#") Согласование
+								li: a(href="#") Приемка квартир
+								li: a(href="#") Самострой
+				+e.col.col-auto.ms-auto
+					+e.phone-number
+						+e.tel(href='tel:+74954600924') +7 (495) 460 09 24
+						+e.modal-link.btn(type='button' data-src='modal-call' data-fancybox="modal")
+							+icon('arrow-lg-right')
+							| Обратный звонок
 	// end top-nav
