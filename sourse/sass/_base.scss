@@ -70,6 +70,7 @@ body {
 		left: 0;
 		// opacity: 1;
 		z-index: 10;
+		pointer-events: none;
 		top: 0;
 	}
 
@@ -90,7 +91,7 @@ body {
     overscroll-behavior: none;
 		&::before {
 			opacity: 0.76;
-
+			pointer-events: all;
 		}
 		.top-nav__logo, .top-nav__text, .top-nav__phone-number {
 			position: relative;
