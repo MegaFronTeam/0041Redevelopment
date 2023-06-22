@@ -212,8 +212,14 @@
 	}
 
 	.icon {
-		font-size: rem(16);
+		font-size: rem(22);
 		margin-left: rem(10);
+		&-arrow-more {
+			font-size: rem(16);
+		}
+		path {
+			fill: currentColor;
+		}
 	}
 	img {
 		flex: 0 0 auto;

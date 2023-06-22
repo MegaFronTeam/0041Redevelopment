@@ -12,12 +12,12 @@ mixin headerBlock(title='Согласование перепланировки �
 						mixin item(icon, title, text)
 							.col-sm-6.col-lg
 								+e.item
-									+img(`img/svg/${icon}`)
+									+icon(`${icon}`)
 									h3!= title
 									p!= text
-						+item('headerBlock-icon-1.svg', '> 1 300', 'перепланировок за&nbsp;2022 год')
-						+item('headerBlock-icon-2.svg', '100%', 'вероятность согласования')
-						+item('headerBlock-icon-3.svg', '7 лет', 'опыта на&nbsp;рынке, с&nbsp;2016&nbsp;года')
+						+item('headerBlock-icon-1', '> 1 300', 'перепланировок за&nbsp;2022 год')
+						+item('headerBlock-icon-2', '100%', 'вероятность согласования')
+						+item('headerBlock-icon-3', '7 лет', 'опыта на&nbsp;рынке, с&nbsp;2016&nbsp;года')
 				.col-lg-auto
 					+sForm()
 	// end headerBlock

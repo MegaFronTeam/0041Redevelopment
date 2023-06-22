@@ -64,7 +64,7 @@
 	&__item {
 		position: relative;
 		padding-left: rem(38);
-		img {
+		img, svg {
 			color: $green;
 			font-size: rem(25);
 			width: 1em;
