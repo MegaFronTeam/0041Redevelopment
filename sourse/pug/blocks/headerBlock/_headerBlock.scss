@@ -83,6 +83,25 @@
 			line-height: 1.12;
 		}
 	}
+	&--2 {
+		min-height: auto;
+		@include media-breakpoint-up(lg) {
+			--sPB: #{rem(71)};
+			--sTPB: #{rem(57)};
+		}
+		.section-title {
+			&__btn {
+				margin-top: rem(20);
+				width: 100%;
+				max-width: rem(304);
+			}
+		}
+		.headerBlock__inner-row {
+			@include media-breakpoint-up(xxl) {
+				--bs-gutter-x: #{rem(83)};
+			}
+		}	
+	}
 	@include media-breakpoint-up(xl) {}
 
 	@include media-breakpoint-up(lg) {}

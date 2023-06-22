@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Примеры наших работ</title>
+		<meta name="description" content="description">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, shrink-to-fit=no">
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+							wrap.remove();
+						}
+					);
+			}
+		</script>
+	</head>
+	<body class="examples-page" data-bg="">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<!-- start headerBlock-->
+				<div class="headerBlock headerBlock--2 section bg-wrap" id="headerBlock"><img class="object-fit-js picture-bg" src="img/headerBlock-bg-4.jpg" alt="" loading="lazy"/>
+					<div class="container">
+						<div class="headerBlock__row row">
+							<div class="headerBlock__col col">
+								<div class="section-title">
+									<h1>Примеры наших работ</h1>
+									<p>Нужна консультация? Оставьте заявку!</p>
+									<button class="section-title__btn btn btn-primary" type="button" data-src="modal-call" data-fancybox="modal">Получить консультацию
+									</button>
+								</div>
+								<div class="headerBlock__inner-row row">
+									<div class="col-sm-6 col-lg-3">
+										<div class="headerBlock__item">
+											<svg class="icon icon-headerBlock-icon-1 ">
+												<use xlink:href="img/svg/sprite.svg#headerBlock-icon-1"></use>
+											</svg>
+											<h3>> 1 300</h3>
+											<p>перепланировок за&nbsp;2022 год</p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-3">
+										<div class="headerBlock__item">
+											<svg class="icon icon-headerBlock-icon-2 ">
+												<use xlink:href="img/svg/sprite.svg#headerBlock-icon-2"></use>
+											</svg>
+											<h3>100%</h3>
+											<p>вероятность согласования</p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-3">
+										<div class="headerBlock__item">
+											<svg class="icon icon-headerBlock-icon-3 ">
+												<use xlink:href="img/svg/sprite.svg#headerBlock-icon-3"></use>
+											</svg>
+											<h3>7 лет</h3>
+											<p>опыта на&nbsp;рынке, с&nbsp;2016&nbsp;года</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end headerBlock-->
+				<div class="page-head bg-white">
+					<div class="container">
+						<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+							<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+										<meta itemprop="position" content="1"/></a></li>
+								<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Наши проекты </span>
+										<meta itemprop="position" content="2"/></a></li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				<!-- start sPortfolio-->
+				<section class="sPortfolio section" id="sPortfolio">
+					<div class="container">
+						<div class="section-title">
+							<h2>Наши проекты</h2>
+							<p>Примеры выполненных перепланировок квартир и&nbsp;нежилых помещений</p>
+						</div>
+						<div class="sPortfolio__row row">
+							<div class="col-md-6 col-lg-4">
+								<!-- start product-card-->
+								<div class="portfolio-item">
+									<a class="portfolio-item__img-wrap" href="#"><img class="object-fit-js" src="img/portfolio-item-1.jpg" alt="" loading="lazy"/>
+									</a>
+									<div class="portfolio-item__caption">
+										<div class="portfolio-item__label-wrap">
+											<div class="row">
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--type btn">Квартира
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--area btn">97&nbsp;кв.&nbsp;м&sup2;
+													</div>
+												</div>
+											</div>
+										</div><a class="h6" href="#">Из&nbsp;коммуналки в&nbsp;апарт-отель</a>
+										<ul>
+											<li>Из&nbsp;5&nbsp;комнат в&nbsp;5&nbsp;комнат со&nbsp;своими санузлами и&nbsp;кухнями</li>
+											<li>&bull; Демонтаж ненесущих межкомнатных перегородок;</li>
+											<li>&bull; Монтаж ненесущих межкомнатных перегородок;</li>
+											<li>&bull; Несущие конструкции не&nbsp;затрагиваются;</li>
+											<li>&bull; Увеличение мокрых зон за&nbsp;счет жилых помещений</li>
+											<li>&bull; Изменение систем водоснабжения и&nbsp;канализации.</li>
+										</ul>
+										<div class="row">
+											<div class="col-auto">
+												<div class="portfolio-item__row portfolio-item__row--sm row">
+													<div class="col-auto">
+														<div class="portfolio-item__time">75&nbsp;дней
+														</div>
+													</div>
+													<div class="portfolio-item__col col-auto">
+														<div class="portfolio-item__price">580&nbsp;000₽
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-auto order-xl-first">
+												<a class="portfolio-item__btn btn btn-sm btn-primary" href="#">Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end product-card-->
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<!-- start product-card-->
+								<div class="portfolio-item">
+									<a class="portfolio-item__img-wrap" href="#"><img class="object-fit-js" src="img/portfolio-item-2.jpg" alt="" loading="lazy"/>
+									</a>
+									<div class="portfolio-item__caption">
+										<div class="portfolio-item__label-wrap">
+											<div class="row">
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--type btn">Квартира
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--area btn">160&nbsp;кв.&nbsp;м&sup2;
+													</div>
+												</div>
+											</div>
+										</div><a class="h6" href="#">Перепланировка квартиры</a>
+										<ul>
+											<li>Какие работы были выполненны:</li>
+											<li>&bull; Перенос во&nbsp;вспомогательных помещениях дополнительного санитарно-технического оборудования.</li>
+											<li>&bull; Установка раковины и&nbsp;плиты на&nbsp;кухне</li>
+											<li>&bull; Изменение формы оконных и&nbsp;дверных проемов балконов</li>
+											<li>&bull; Изменение конструкции полов</li>
+											<li>&bull; Устройство и&nbsp;разборка не&nbsp;несущих перегородок, демонтаж и&nbsp;установка дверного блока и&nbsp;проема</li>
+										</ul>
+										<div class="row">
+											<div class="col-auto">
+												<div class="portfolio-item__row portfolio-item__row--sm row">
+													<div class="col-auto">
+														<div class="portfolio-item__time">35&nbsp;дней
+														</div>
+													</div>
+													<div class="portfolio-item__col col-auto">
+														<div class="portfolio-item__price">250&nbsp;000₽
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-auto order-xl-first">
+												<a class="portfolio-item__btn btn btn-sm btn-primary" href="#">Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end product-card-->
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<!-- start product-card-->
+								<div class="portfolio-item">
+									<a class="portfolio-item__img-wrap" href="#"><img class="object-fit-js" src="img/portfolio-item-3.jpg" alt="" loading="lazy"/>
+									</a>
+									<div class="portfolio-item__caption">
+										<div class="portfolio-item__label-wrap">
+											<div class="row">
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--type btn">Квартира
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--area btn">47&nbsp;кв.&nbsp;м&sup2;
+													</div>
+												</div>
+											</div>
+										</div><a class="h6" href="#">Демонтаж несущих перегородок</a>
+										<ul>
+											<li>&bull; Демонтаж и&nbsp;устройство ненесущих перегородок, в&nbsp;том числе с&nbsp;дверными блоками;</li>
+											<li>&bull; Перенос дверного проема в&nbsp;ненесущей перегородке;</li>
+											<li>&bull; Установка оборудования в&nbsp;соответствии с&nbsp;проектным решением;</li>
+											<li>&bull; Изменение конструкции полов без затрагивания межэтажного перекрытия, в&nbsp;том числе с&nbsp;устройством гидроизоляции</li>
+										</ul>
+										<div class="row">
+											<div class="col-auto">
+												<div class="portfolio-item__row portfolio-item__row--sm row">
+													<div class="col-auto">
+														<div class="portfolio-item__time">28&nbsp;дней
+														</div>
+													</div>
+													<div class="portfolio-item__col col-auto">
+														<div class="portfolio-item__price">300&nbsp;000₽
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-auto order-xl-first">
+												<a class="portfolio-item__btn btn btn-sm btn-primary" href="#">Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end product-card-->
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<!-- start product-card-->
+								<div class="portfolio-item">
+									<a class="portfolio-item__img-wrap" href="#"><img class="object-fit-js" src="img/portfolio-item-1.jpg" alt="" loading="lazy"/>
+									</a>
+									<div class="portfolio-item__caption">
+										<div class="portfolio-item__label-wrap">
+											<div class="row">
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--type btn">Квартира
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--area btn">97&nbsp;кв.&nbsp;м&sup2;
+													</div>
+												</div>
+											</div>
+										</div><a class="h6" href="#">Из&nbsp;коммуналки в&nbsp;апарт-отель</a>
+										<ul>
+											<li>Из&nbsp;5&nbsp;комнат в&nbsp;5&nbsp;комнат со&nbsp;своими санузлами и&nbsp;кухнями</li>
+											<li>&bull; Демонтаж ненесущих межкомнатных перегородок;</li>
+											<li>&bull; Монтаж ненесущих межкомнатных перегородок;</li>
+											<li>&bull; Несущие конструкции не&nbsp;затрагиваются;</li>
+											<li>&bull; Увеличение мокрых зон за&nbsp;счет жилых помещений</li>
+											<li>&bull; Изменение систем водоснабжения и&nbsp;канализации.</li>
+										</ul>
+										<div class="row">
+											<div class="col-auto">
+												<div class="portfolio-item__row portfolio-item__row--sm row">
+													<div class="col-auto">
+														<div class="portfolio-item__time">75&nbsp;дней
+														</div>
+													</div>
+													<div class="portfolio-item__col col-auto">
+														<div class="portfolio-item__price">580&nbsp;000₽
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-auto order-xl-first">
+												<a class="portfolio-item__btn btn btn-sm btn-primary" href="#">Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end product-card-->
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<!-- start product-card-->
+								<div class="portfolio-item">
+									<a class="portfolio-item__img-wrap" href="#"><img class="object-fit-js" src="img/portfolio-item-2.jpg" alt="" loading="lazy"/>
+									</a>
+									<div class="portfolio-item__caption">
+										<div class="portfolio-item__label-wrap">
+											<div class="row">
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--type btn">Квартира
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--area btn">160&nbsp;кв.&nbsp;м&sup2;
+													</div>
+												</div>
+											</div>
+										</div><a class="h6" href="#">Перепланировка квартиры</a>
+										<ul>
+											<li>Какие работы были выполненны:</li>
+											<li>&bull; Перенос во&nbsp;вспомогательных помещениях дополнительного санитарно-технического оборудования.</li>
+											<li>&bull; Установка раковины и&nbsp;плиты на&nbsp;кухне</li>
+											<li>&bull; Изменение формы оконных и&nbsp;дверных проемов балконов</li>
+											<li>&bull; Изменение конструкции полов</li>
+											<li>&bull; Устройство и&nbsp;разборка не&nbsp;несущих перегородок, демонтаж и&nbsp;установка дверного блока и&nbsp;проема</li>
+										</ul>
+										<div class="row">
+											<div class="col-auto">
+												<div class="portfolio-item__row portfolio-item__row--sm row">
+													<div class="col-auto">
+														<div class="portfolio-item__time">35&nbsp;дней
+														</div>
+													</div>
+													<div class="portfolio-item__col col-auto">
+														<div class="portfolio-item__price">250&nbsp;000₽
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-auto order-xl-first">
+												<a class="portfolio-item__btn btn btn-sm btn-primary" href="#">Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end product-card-->
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<!-- start product-card-->
+								<div class="portfolio-item">
+									<a class="portfolio-item__img-wrap" href="#"><img class="object-fit-js" src="img/portfolio-item-3.jpg" alt="" loading="lazy"/>
+									</a>
+									<div class="portfolio-item__caption">
+										<div class="portfolio-item__label-wrap">
+											<div class="row">
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--type btn">Квартира
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--area btn">47&nbsp;кв.&nbsp;м&sup2;
+													</div>
+												</div>
+											</div>
+										</div><a class="h6" href="#">Демонтаж несущих перегородок</a>
+										<ul>
+											<li>&bull; Демонтаж и&nbsp;устройство ненесущих перегородок, в&nbsp;том числе с&nbsp;дверными блоками;</li>
+											<li>&bull; Перенос дверного проема в&nbsp;ненесущей перегородке;</li>
+											<li>&bull; Установка оборудования в&nbsp;соответствии с&nbsp;проектным решением;</li>
+											<li>&bull; Изменение конструкции полов без затрагивания межэтажного перекрытия, в&nbsp;том числе с&nbsp;устройством гидроизоляции</li>
+										</ul>
+										<div class="row">
+											<div class="col-auto">
+												<div class="portfolio-item__row portfolio-item__row--sm row">
+													<div class="col-auto">
+														<div class="portfolio-item__time">28&nbsp;дней
+														</div>
+													</div>
+													<div class="portfolio-item__col col-auto">
+														<div class="portfolio-item__price">300&nbsp;000₽
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-auto order-xl-first">
+												<a class="portfolio-item__btn btn btn-sm btn-primary" href="#">Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end product-card-->
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<!-- start product-card-->
+								<div class="portfolio-item">
+									<a class="portfolio-item__img-wrap" href="#"><img class="object-fit-js" src="img/portfolio-item-1.jpg" alt="" loading="lazy"/>
+									</a>
+									<div class="portfolio-item__caption">
+										<div class="portfolio-item__label-wrap">
+											<div class="row">
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--type btn">Квартира
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--area btn">97&nbsp;кв.&nbsp;м&sup2;
+													</div>
+												</div>
+											</div>
+										</div><a class="h6" href="#">Из&nbsp;коммуналки в&nbsp;апарт-отель</a>
+										<ul>
+											<li>Из&nbsp;5&nbsp;комнат в&nbsp;5&nbsp;комнат со&nbsp;своими санузлами и&nbsp;кухнями</li>
+											<li>&bull; Демонтаж ненесущих межкомнатных перегородок;</li>
+											<li>&bull; Монтаж ненесущих межкомнатных перегородок;</li>
+											<li>&bull; Несущие конструкции не&nbsp;затрагиваются;</li>
+											<li>&bull; Увеличение мокрых зон за&nbsp;счет жилых помещений</li>
+											<li>&bull; Изменение систем водоснабжения и&nbsp;канализации.</li>
+										</ul>
+										<div class="row">
+											<div class="col-auto">
+												<div class="portfolio-item__row portfolio-item__row--sm row">
+													<div class="col-auto">
+														<div class="portfolio-item__time">75&nbsp;дней
+														</div>
+													</div>
+													<div class="portfolio-item__col col-auto">
+														<div class="portfolio-item__price">580&nbsp;000₽
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-auto order-xl-first">
+												<a class="portfolio-item__btn btn btn-sm btn-primary" href="#">Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end product-card-->
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<!-- start product-card-->
+								<div class="portfolio-item">
+									<a class="portfolio-item__img-wrap" href="#"><img class="object-fit-js" src="img/portfolio-item-2.jpg" alt="" loading="lazy"/>
+									</a>
+									<div class="portfolio-item__caption">
+										<div class="portfolio-item__label-wrap">
+											<div class="row">
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--type btn">Квартира
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--area btn">160&nbsp;кв.&nbsp;м&sup2;
+													</div>
+												</div>
+											</div>
+										</div><a class="h6" href="#">Перепланировка квартиры</a>
+										<ul>
+											<li>Какие работы были выполненны:</li>
+											<li>&bull; Перенос во&nbsp;вспомогательных помещениях дополнительного санитарно-технического оборудования.</li>
+											<li>&bull; Установка раковины и&nbsp;плиты на&nbsp;кухне</li>
+											<li>&bull; Изменение формы оконных и&nbsp;дверных проемов балконов</li>
+											<li>&bull; Изменение конструкции полов</li>
+											<li>&bull; Устройство и&nbsp;разборка не&nbsp;несущих перегородок, демонтаж и&nbsp;установка дверного блока и&nbsp;проема</li>
+										</ul>
+										<div class="row">
+											<div class="col-auto">
+												<div class="portfolio-item__row portfolio-item__row--sm row">
+													<div class="col-auto">
+														<div class="portfolio-item__time">35&nbsp;дней
+														</div>
+													</div>
+													<div class="portfolio-item__col col-auto">
+														<div class="portfolio-item__price">250&nbsp;000₽
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-auto order-xl-first">
+												<a class="portfolio-item__btn btn btn-sm btn-primary" href="#">Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end product-card-->
+							</div>
+							<div class="col-md-6 col-lg-4">
+								<!-- start product-card-->
+								<div class="portfolio-item">
+									<a class="portfolio-item__img-wrap" href="#"><img class="object-fit-js" src="img/portfolio-item-3.jpg" alt="" loading="lazy"/>
+									</a>
+									<div class="portfolio-item__caption">
+										<div class="portfolio-item__label-wrap">
+											<div class="row">
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--type btn">Квартира
+													</div>
+												</div>
+												<div class="col-auto">
+													<div class="portfolio-item__label portfolio-item__label--area btn">47&nbsp;кв.&nbsp;м&sup2;
+													</div>
+												</div>
+											</div>
+										</div><a class="h6" href="#">Демонтаж несущих перегородок</a>
+										<ul>
+											<li>&bull; Демонтаж и&nbsp;устройство ненесущих перегородок, в&nbsp;том числе с&nbsp;дверными блоками;</li>
+											<li>&bull; Перенос дверного проема в&nbsp;ненесущей перегородке;</li>
+											<li>&bull; Установка оборудования в&nbsp;соответствии с&nbsp;проектным решением;</li>
+											<li>&bull; Изменение конструкции полов без затрагивания межэтажного перекрытия, в&nbsp;том числе с&nbsp;устройством гидроизоляции</li>
+										</ul>
+										<div class="row">
+											<div class="col-auto">
+												<div class="portfolio-item__row portfolio-item__row--sm row">
+													<div class="col-auto">
+														<div class="portfolio-item__time">28&nbsp;дней
+														</div>
+													</div>
+													<div class="portfolio-item__col col-auto">
+														<div class="portfolio-item__price">300&nbsp;000₽
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xl-auto order-xl-first">
+												<a class="portfolio-item__btn btn btn-sm btn-primary" href="#">Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end product-card-->
+							</div>
+							<div class="col-12">
+								<div class="gray-outline-btn btn btn-outline-dark" href="#">
+									 Больше проектов
+									<svg class="icon icon-arrow-more ">
+										<use xlink:href="img/svg/sprite2.svg#arrow-more"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sPortfolio-->
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+			<script>addBlock(`modals`)</script>
+			<div id="modalsWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="libs/masonry-layout/masonry.pkgd.min.js"> </script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

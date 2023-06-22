@@ -31,7 +31,7 @@ mixin portfolio-item(img, area, h, time, price)
 				
 	// end product-card
 
-mixin sPortfolio(data)
+mixin sPortfolio(thirdRow=2)
 	// start sPortfolio
 	+b.SECTION.sPortfolio.section#sPortfolio&attributes(attributes)
 		.container
@@ -39,7 +39,7 @@ mixin sPortfolio(data)
 				h2 Наши проекты
 				p Примеры выполненных перепланировок квартир и&nbsp;нежилых помещений
 			+e.row.row
-				- for (var x = 0; x < 2; x++)
+				- for (var x = 0; x < thirdRow; x++)
 					.col-md-6.col-lg-4
 						+portfolio-item(1, `97&nbsp;кв.&nbsp;м&sup2;`, `Из&nbsp;коммуналки в&nbsp;апарт-отель`, `75&nbsp;дней`, `580&nbsp;000₽`)
 					.col-md-6.col-lg-4

@@ -151,7 +151,7 @@
 
 .page-head {
 	border-bottom: 1px solid #D3D3D3;
-	background-color: #f5f5f5;
+	background-color: #F9F9FA;
 	.swiper {
 		overflow: visible;
 	}
@@ -224,5 +224,28 @@
 	img {
 		flex: 0 0 auto;
 		margin-left: rem(10);
+	}
+}
+
+.contact-page {
+	background-color: #F9F9FA;
+	.sContact {
+		@include media-breakpoint-up(lg) {
+			--sPT: #{rem(60)};
+			--sPB: #{rem(60)};
+		}
+	}
+	.sAudit {
+		@include media-breakpoint-up(lg) {
+			--sPT: #{rem(60)};
+		}
+	}
+}
+
+.examples-page {
+	.sPortfolio {
+		@include media-breakpoint-up(lg) {
+			--sPB: #{rem(120)};
+		}
 	}
 }

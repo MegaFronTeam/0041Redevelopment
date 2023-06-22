@@ -1,7 +1,7 @@
-mixin headerBlock(title='Согласование перепланировки любой сложности в Москве и МО')
+mixin headerBlock(title='Согласование перепланировки любой сложности в Москве и МО', bgImg='headerBlock-bg-1.jpg')
 	// start headerBlock
 	+b.headerBlock.section#headerBlock.bg-wrap&attributes(attributes)
-		+img('img/headerBlock-bg-1.jpg', 'bg').picture-bg
+		+img(`img/${bgImg}`, 'bg').picture-bg
 		.container
 			+e.row.row
 				+e.col.col
@@ -20,4 +20,27 @@ mixin headerBlock(title='Согласование перепланировки �
 						+item('headerBlock-icon-3', '7 лет', 'опыта на&nbsp;рынке, с&nbsp;2016&nbsp;года')
 				.col-lg-auto
 					+sForm()
+	// end headerBlock
+
+mixin headerBlock2(title, bgImg='headerBlock-bg-1.jpg')
+	// start headerBlock
+	+b.headerBlock--2.section#headerBlock.bg-wrap&attributes(attributes)
+		+img(`img/${bgImg}`, 'bg').picture-bg
+		.container
+			+e.row.row
+				+e.col.col
+					+b.section-title
+						h1!= title
+						p Нужна консультация? Оставьте заявку!
+						+e.btn.btn.btn-primary(type='button' data-src='modal-call' data-fancybox="modal") Получить консультацию
+					+e.inner-row.row
+						mixin item(icon, title, text)
+							.col-sm-6.col-lg-3
+								+e.item
+									+icon(`${icon}`)
+									h3!= title
+									p!= text
+						+item('headerBlock-icon-1', '> 1 300', 'перепланировок за&nbsp;2022 год')
+						+item('headerBlock-icon-2', '100%', 'вероятность согласования')
+						+item('headerBlock-icon-3', '7 лет', 'опыта на&nbsp;рынке, с&nbsp;2016&nbsp;года')
 	// end headerBlock

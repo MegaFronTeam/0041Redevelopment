@@ -12,11 +12,11 @@ include ../blocks/sOurServices/_sOurServices.pug
 include ../blocks/sTeam/_sTeam.pug
 
 block variables
-	- let  mainPage= 'main-page' 
+	- let  mainPage= 'contact-page' 
 	- let  bg= ''
 
 block title
-	- let  title= 'Наши услуги'
+	- let  title= 'Контакты'
 	title= title
 block pagecontent
 	//- +mob-mnu()
@@ -24,12 +24,12 @@ block pagecontent
 	
 	+parts('header')
 	main
-		+headerBlock('Согласование перепланировки любой сложности в&nbsp;Москве и&nbsp;МО', 'headerBlock-bg-2.jpg')
-		+page-head('', 'Все услуги ')
-		+sOurServices2
-		+sTeam
+		+headerBlock2('Контакты', 'headerBlock-bg-3.jpg')
+		+page-head('', 'Контакты ')
+		//- +sOurServices2
+		//- +sTeam
+		+sContact(false)
 		+sAudit
-		+sContact
 	+parts('footer')
 	+parts('modals')
 	//- +cookies()

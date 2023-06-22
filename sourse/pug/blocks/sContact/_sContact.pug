@@ -1,9 +1,10 @@
-mixin sContact()
+mixin sContact(st=true)
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		.container
-			+b.section-title
-				h2 Контакты 
+			if st
+				+b.section-title
+					h2 Контакты 
 			mixin wrap()
 				+e.wrap 
 					block

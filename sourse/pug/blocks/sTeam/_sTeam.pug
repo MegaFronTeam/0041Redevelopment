@@ -1,0 +1,21 @@
+mixin sTeam(data)
+	// start sTeam
+	+b.SECTION.sTeam.section#sTeam&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Наша команда
+				p Выберите интересующую вас услугу и&nbsp;узнайте сроки и&nbsp;условия согласования
+			mixin item(img, title, text='Терехов Дмитрий')
+				+e.item
+					+e.img-wrap
+						.img-wrap-center
+							+img(`img/${img}`, 'bg')
+					+e.content
+						h6!=title
+						p!=text
+			- let status = ['Руководитель', 'Коммерческий директор', 'Главный инженер', 'Инженер', 'Инженер', 'Проектировщик', 'Проектировщик', 'Руководитель']
+			+e.row.row
+				- for(let i = 0; i < 8; i++)
+					.col-sm-6.col-md-4.col-xl-3
+						+item('avatar.jpg', status[i])
+	// end sTeam
