@@ -35,6 +35,10 @@
 		@include media-breakpoint-up(xxl) {
 			--bs-gutter-x: #{rem(44)};
 		}
+		@include media-breakpoint-down(lg) {
+			flex-direction: column;
+			height: 100%;
+		}
 	}
 	&__text {
 		font-size: rem(10);

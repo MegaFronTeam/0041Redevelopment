@@ -162,12 +162,12 @@ function svg() {
                 }
             }))
             .pipe(cheerio({
-                run: function ($) {
-                    $('[fill]').removeAttr('fill');
-                    $('[stroke]').removeAttr('stroke');
-                    $('[style]').removeAttr('style');
-                    $('[opacity]').removeAttr('opacity');
-                },
+                // run: function ($) {
+                //     $('[fill]').removeAttr('fill');
+                //     $('[stroke]').removeAttr('stroke');
+                //     $('[style]').removeAttr('style');
+                //     $('[opacity]').removeAttr('opacity');
+                // },
                 parserOptions: { xmlMode: true }
             }))
             .pipe(replace('&gt;', '>'))

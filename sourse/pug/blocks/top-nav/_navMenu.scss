@@ -215,5 +215,16 @@
 		.top-nav__col {
 			display: block;
 		}
+		.top-nav__text {
+			z-index: 10 !important;
+			opacity: 1 !important;
+			padding: 0 rem(10);
+			color: #000;
+			&[href] {
+				&:hover {
+					color: $gray-600;
+				}
+			}
+		}
 	}
 }

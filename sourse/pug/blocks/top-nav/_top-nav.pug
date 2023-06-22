@@ -41,14 +41,14 @@ mixin top-nav()
 									.d-flex.align-items-center
 										+menu-toggle()
 										+mnu()
-								.col-lg-auto.d-none.d-lg-block
+								.col-lg-auto.order-last.order-lg-0
 									+e.text Пн-Пт 10:00-18:00
-								.col-lg-auto.d-none.d-lg-block
+								.col-lg-auto.order-last.order-lg-0
 									+e.text(href='mailto:info@pryamoepravo.ru') info@pryamoepravo.ru
 								.w-100.d-none.d-lg-block
 								+e.inner-col.col-lg-auto
 									+e.logo(href='/'): +img('img/svg/footer-logo.svg')
-								+e.col.col-lg
+								+e.col.col-lg.mb-auto.mb-lg-0
 									+e.navigation
 										nav
 											ul
