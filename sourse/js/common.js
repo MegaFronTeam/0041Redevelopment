@@ -91,6 +91,7 @@ const JSCCommon = {
     document.addEventListener('click', (event) => {
         let container = event.target.closest('.menu-mobile--js'); // (1)
         let toggle = event.target.closest('.toggle-menu-mobile--js'); // (1)
+        let menuToggle = event.target.closest('.menu-mobile--js:before'); // (1)
         if (toggle) this.toggleMenu();
         if (!container && !toggle) this.closeMenu();
       },

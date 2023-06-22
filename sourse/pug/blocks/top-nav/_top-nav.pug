@@ -16,7 +16,7 @@ mixin mob-mnu()
 			span
 		+e.inner
 			+mnu()
-			+b.topLine
+			.top-nav__navigation
 				nav
 					ul
 						li: a(href="#") Квартиры 
@@ -29,29 +29,42 @@ mixin mob-mnu()
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy
-		.container
+		+e.container.container
 			+e.row.row
-				.col
-					.d-flex.align-items-center
-						+menu-toggle()
-						+mnu().d-none.d-lg-flex
-				.col-auto
+				.col.d-lg-none
+					+menu-toggle()
+				.col-auto.col-lg
+					.menu-mobile.menu-mobile--js
+						.menu-mobile__inner
+							+e.inner-row.row
+								.col-lg
+									.d-flex.align-items-center
+										+menu-toggle()
+										+mnu()
+								.col-lg-auto.d-none.d-lg-block
+									+e.text Пн-Пт 10:00-18:00
+								.col-lg-auto.d-none.d-lg-block
+									+e.text(href='mailto:info@pryamoepravo.ru') info@pryamoepravo.ru
+								.w-100.d-none.d-lg-block
+								+e.inner-col.col-lg-auto
+									+e.logo(href='/'): +img('img/svg/footer-logo.svg')
+								+e.col.col-lg
+									+e.navigation
+										nav
+											ul
+												li: a(href="#") Квартиры 
+												li: a(href="#") Нежилые
+												li: a(href="#") Входная группа
+												li: a(href="#") Согласование
+												li: a(href="#") Приемка квартир
+												li: a(href="#") Самострой
+				.col-auto.d-lg-none
 					+e.text Пн-Пт 10:00-18:00
-				.col-auto
+				.col-auto.d-lg-none
 					+e.text(href='mailto:info@pryamoepravo.ru') info@pryamoepravo.ru
-				.col-12.p-0.m-0: +e.line
-				+e.col.col-auto
+				.w-100.d-lg-none
+				+e.col.col.d-lg-none
 					+e.logo(href='/'): +img('img/svg/footer-logo.svg')
-				+e.col.col.d-none.d-lg-block
-					+e.navigation
-						nav
-							ul
-								li: a(href="#") Квартиры 
-								li: a(href="#") Нежилые
-								li: a(href="#") Входная группа
-								li: a(href="#") Согласование
-								li: a(href="#") Приемка квартир
-								li: a(href="#") Самострой
 				+e.col.col-auto.ms-auto
 					+e.phone-number
 						+e.tel(href='tel:+74954600924') +7 (495) 460 09 24

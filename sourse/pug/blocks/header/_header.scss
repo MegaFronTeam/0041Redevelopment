@@ -16,16 +16,20 @@
 			transform: translateY(-100%);
 			// padding-top: .875rem;
 			// padding-top: 0;
-			.topLine {
-				display: none;
-			}
 			.top-nav {
 				background-color: $gray-900;
-				&__col {
+				&__col, .w-100 {
 					display: none !important;
 				}
-				&__line {
+				&__inner-col {
 					display: none;
+					@include media-breakpoint-up(lg) {
+					}
+				}
+			}
+			@include media-breakpoint-down(lg) {
+				.menu-mobile .top-nav__col {
+					display: block !important;
 				}
 			}
 		}
