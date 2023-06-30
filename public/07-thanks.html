@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Примеры наших работ</title>
+		<meta name="description" content="description">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, shrink-to-fit=no">
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+							wrap.remove();
+						}
+					);
+			}
+		</script>
+	</head>
+	<body class="examples-page" data-bg="">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<!-- start headerBlock-->
+				<div class="headerBlock headerBlock--2 section bg-wrap" id="headerBlock"><img class="object-fit-js picture-bg" src="img/headerBlock-bg-4.jpg" alt="" loading="lazy"/>
+					<div class="container">
+						<div class="headerBlock__row row">
+							<div class="headerBlock__col col">
+								<div class="section-title">
+									<h1>Примеры наших работ</h1>
+									<p>Нужна консультация? Оставьте заявку!</p>
+									<button class="section-title__btn btn btn-primary" type="button" data-src="modal-call" data-fancybox="modal">Получить консультацию
+									</button>
+								</div>
+								<div class="headerBlock__inner-row row">
+									<div class="col-sm-6 col-lg-3">
+										<div class="headerBlock__item">
+											<svg class="icon icon-headerBlock-icon-1 ">
+												<use xlink:href="img/svg/sprite.svg#headerBlock-icon-1"></use>
+											</svg>
+											<h3>> 1 300</h3>
+											<p>перепланировок за&nbsp;2022 год</p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-3">
+										<div class="headerBlock__item">
+											<svg class="icon icon-headerBlock-icon-2 ">
+												<use xlink:href="img/svg/sprite.svg#headerBlock-icon-2"></use>
+											</svg>
+											<h3>100%</h3>
+											<p>вероятность согласования</p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-lg-3">
+										<div class="headerBlock__item">
+											<svg class="icon icon-headerBlock-icon-3 ">
+												<use xlink:href="img/svg/sprite.svg#headerBlock-icon-3"></use>
+											</svg>
+											<h3>7 лет</h3>
+											<p>опыта на&nbsp;рынке, с&nbsp;2016&nbsp;года</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end headerBlock-->
+				<div class="page-head bg-white">
+					<div class="container">
+						<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+							<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+										<meta itemprop="position" content="1"/></a></li>
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Наши проекты </span>
+										<meta itemprop="position" content="2"/></a></li>
+								<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Кейс 1</span>
+										<meta itemprop="position" content="3"/></a></li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				<!-- start sAudit-->
+				<section class="sAudit section" id="sAudit">
+					<div class="container">
+						<div class="sAudit__wrap">
+							<div class="section-title">
+								<h2>Бесплатный аудит вашей перепланировки</h2>
+								<p>Заполните форму и&nbsp;мы&nbsp;проведем бесплатный анализ и&nbsp;дадим экспертное заключение о&nbsp;возможности перепланировки вашего помещения</p>
+							</div>
+							<div class="sAudit__row row">
+								<div class="col-md-6 col-lg-4">
+									<div class="sAudit__item">
+										<div class="sAudit__title">Тип помещения
+										</div>
+										<div class="row">
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="house" type="radio"/><span class="custom-input__text form-check-label">Квартира</span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="house" type="radio"/><span class="custom-input__text form-check-label">Квартира в новостройке</span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="house" type="radio"/><span class="custom-input__text form-check-label">Коммерческое помещение</span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="house" type="radio"/><span class="custom-input__text form-check-label">Апартаменты</span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="house" type="radio"/><span class="custom-input__text form-check-label">Помещение в жилом доме</span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="house" type="radio"/><span class="custom-input__text form-check-label">Другое</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sAudit__item">
+										<div class="sAudit__title">Площадь помещения
+										</div>
+										<div class="row">
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="area" type="radio"/><span class="custom-input__text form-check-label">До 50 кв м²</span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="area" type="radio"/><span class="custom-input__text form-check-label">До 100 кв м²</span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="area" type="radio"/><span class="custom-input__text form-check-label">До 200 кв м²</span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="area" type="radio"/><span class="custom-input__text form-check-label">До 500 кв м²</span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="area" type="radio"/><span class="custom-input__text form-check-label">Более 500 кв м²</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sAudit__item">
+										<div class="sAudit__title">На каком этапе 
+										</div>
+										<div class="row">
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="stage" type="radio"/><span class="custom-input__text form-check-label">Планируется перепланировка</span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="stage" type="radio"/><span class="custom-input__text form-check-label">Уже выполненна</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sAudit__item">
+										<div class="sAudit__title">Что хотите сделать или уже сделали
+										</div>
+										<div class="sAudit__input-wrap form-group"><input class="sAudit__input form-control" name="text" type="text" placeholder="Например, объединить 2 комнаты"/>
+										</div>
+										<!-- +e.input-wrap-->
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sAudit__item">
+										<div class="sAudit__title">Документы (если есть)
+										</div>
+										<ol>
+											<li>БТИ, экспликация (поэтажный план)</li>
+											<li>Эскиз планируемых работ (можно от руки)</li>
+										</ol>
+										<div class="upload-field">
+											<div class="upload-field__wrap">
+												<div class="upload-field__input-wrap">
+													<label>
+														<input class="input-upload" type="file" name="file"/><span>Загрузить</span>
+													</label>
+												</div>
+												<div class="upload-field__file-name"> 
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="sAudit__item">
+										<div class="sAudit__title">Адрес
+										</div>
+										<div class="sAudit__input-wrap form-group"><input class="sAudit__input form-control" name="text" type="text" placeholder="Город. улица. дом"/>
+										</div>
+										<!-- +e.input-wrap-->
+									</div>
+								</div>
+							</div>
+							<div class="sAudit__footer-row row">
+								<div class="col-xl">
+									<div class="sAudit__footer-row row">
+										<div class="col-md-6 col-lg-4">
+											<div class="sAudit__input-wrap form-group">
+												<label><span class="sAudit__input-title">Имя</span><input class="sAudit__input form-control" name="text" type="text" placeholder="Ваше имя"/>
+												</label>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="col-md-6 col-lg-4">
+											<div class="sAudit__input-wrap form-group">
+												<label><span class="sAudit__input-title">Телефон</span><input class="sAudit__input form-control" name="tel" type="tel" placeholder="+7 (999) 999 99 99"/>
+													<svg class="icon icon-rus-flag ">
+														<use xlink:href="img/svg/sprite.svg#rus-flag"></use>
+													</svg>
+												</label>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+										<div class="col-md-6 col-lg-4">
+											<div class="sAudit__input-wrap form-group">
+												<label><span class="sAudit__input-title">E-mail</span><input class="sAudit__input form-control" name="email" type="email" placeholder="Ваш E-mail"/>
+												</label>
+											</div>
+											<!-- +e.input-wrap-->
+										</div>
+									</div>
+								</div>
+								<div class="sAudit__col col-xl">
+									<a class="sAudit__btn btn btn-primary" href="#">Отправить заявку
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sAudit-->
+				<!-- start sFaq-->
+				<section class="sFaq section" id="sFaq">
+					<div class="container">
+						<div class="section-title">
+							<h2>Часто задаваемые вопросы</h2>
+						</div>
+						<div class="sFaq__row row">
+							<div class="col-lg-7">
+								<div class="dd-group dd-group-js">
+									<div class="dd-group__item">
+										<div class="dd-group__head dd-head-js">Чем грозит самовольная перепланировка?
+										</div>
+										<div class="dd-group__content dd-content-js">
+											<p>Несогласованная перепланировка&nbsp;&mdash; это штраф от&nbsp;Мосжилинспекции, проблемы при продаже квартиры и&nbsp;возможное нарушение кредитного договора по&nbsp;ипотеке.</p>
+										</div>
+									</div>
+									<div class="dd-group__item">
+										<div class="dd-group__head dd-head-js">Как узаконить перепланировку в новостройке?
+										</div>
+										<div class="dd-group__content dd-content-js">
+											<p>Несогласованная перепланировка&nbsp;&mdash; это штраф от&nbsp;Мосжилинспекции, проблемы при продаже квартиры и&nbsp;возможное нарушение кредитного договора по&nbsp;ипотеке.</p>
+										</div>
+									</div>
+									<div class="dd-group__item">
+										<div class="dd-group__head dd-head-js">С чего начать перепланировку?
+										</div>
+										<div class="dd-group__content dd-content-js">
+											<p>Несогласованная перепланировка&nbsp;&mdash; это штраф от&nbsp;Мосжилинспекции, проблемы при продаже квартиры и&nbsp;возможное нарушение кредитного договора по&nbsp;ипотеке.</p>
+										</div>
+									</div>
+									<div class="dd-group__item">
+										<div class="dd-group__head dd-head-js">Какие сроки согласования перепланировки?
+										</div>
+										<div class="dd-group__content dd-content-js">
+											<p>Несогласованная перепланировка&nbsp;&mdash; это штраф от&nbsp;Мосжилинспекции, проблемы при продаже квартиры и&nbsp;возможное нарушение кредитного договора по&nbsp;ипотеке.</p>
+										</div>
+									</div>
+									<div class="dd-group__item">
+										<div class="dd-group__head dd-head-js">Как понять, можно ли согласовать перепланировку?
+										</div>
+										<div class="dd-group__content dd-content-js">
+											<p>Несогласованная перепланировка&nbsp;&mdash; это штраф от&nbsp;Мосжилинспекции, проблемы при продаже квартиры и&nbsp;возможное нарушение кредитного договора по&nbsp;ипотеке.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="sFaq__wrap">
+									<h4>Остались вопросы? Задавайте их в чате</h4>
+									<p>Напишите нам в Telegram/What’s app. Наш специалист ответит в течение нескольких минут.</p>
+									<div class="row">
+										<div class="col-auto"><a href="#"> 
+												<svg class="icon icon-telegram ">
+													<use xlink:href="img/svg/sprite.svg#telegram"></use>
+												</svg>Telegram </a></div>
+										<div class="col-auto"><a href="#"> 
+												<svg class="icon icon-wa2 ">
+													<use xlink:href="img/svg/sprite.svg#wa2"></use>
+												</svg>WhatsApp </a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sFaq-->
+				<!-- start sContact-->
+				<section class="sContact section" id="sContact">
+					<div class="container">
+						<div class="section-title">
+							<h2>Контакты </h2>
+						</div>
+						<div class="sContact__row row">
+							<div class="col-md-6 col-lg col-xl-auto">
+									<div class="sContact__wrap"> 
+										<div class="sContact__item">
+											<svg class="icon icon-phone-call ">
+												<use xlink:href="img/svg/sprite.svg#phone-call"></use>
+											</svg>
+											<div><span>Отдел продаж:</span>
+												<a class="sContact__link" href="tel:+74956645680">+7 (495)664 56 80 
+												</a>
+											</div>
+										</div>
+									</div>
+							</div>
+							<div class="col-md-6 col-lg col-xl">
+									<div class="sContact__wrap"> 
+										<div class="sContact__item">
+											<svg class="icon icon-mail ">
+												<use xlink:href="img/svg/sprite.svg#mail"></use>
+											</svg>
+											<div><span>E-mail:</span>
+												<a class="sContact__link" href="mailto:info@pryamoepravo.ru">info@pryamoepravo.ru
+												</a>
+											</div>
+										</div>
+									</div>
+							</div>
+							<div class="col-md-6 col-lg col-xl-auto">
+									<div class="sContact__wrap"> 
+										<div class="sContact__item">
+											<svg class="icon icon-clock ">
+												<use xlink:href="img/svg/sprite.svg#clock"></use>
+											</svg>
+											<div><span>Время работы:</span>
+												<div class="sContact__link">Пн-вс: 10:00 — 18:00
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+						<div class="sContact__body-row row">
+							<div class="sContact__col col-lg">
+									<div class="sContact__wrap"> 
+										<div>
+											<h5>ООО «ТЕХСТРОЙЭКСПЕРТ»</h5>
+											<div class="sContact__info-wrap row">
+												<div class="sContact__info col-auto"><span>ИНН </span>9717062085
+												</div>
+												<div class="sContact__info col-auto"><span>ОГРН</span>1177746639476
+												</div>
+												<div class="sContact__info col-auto"><span>Расчетный счет</span>40802 810 4 3800 0136281
+												</div>
+											</div>
+											<div class="sContact__info-wrap row">
+												<div class="sContact__info col-auto"><span>Юридический адрес</span>129626, Москва , ул. 1-я Мытищинская, д. 3, стр. 1
+												</div>
+												<div class="sContact__info col-auto"><span>Корреспондентный счет</span>30101 810 4 0000 0000225
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+							<div class="col-lg-auto ms-lg-auto">
+								<div class="sContact__have-question">
+									<h5>Остались вопросы?</h5>
+									<p>Оставьте заявку и мы постараемся вам помочь</p>
+									<button class="sContact__btn btn btn-primary" type="button" data-src="modal-call" data-fancybox="modal">Задать вопрос
+									</button>
+									<div class="soc">
+										<a class="soc__item" href="#" target="_blank">
+											<svg class="icon icon-telegram ">
+												<use xlink:href="img/svg/sprite.svg#telegram"></use>
+											</svg>
+										</a>
+										<a class="soc__item" href="#" target="_blank">
+											<svg class="icon icon-wa2 ">
+												<use xlink:href="img/svg/sprite.svg#wa2"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sContact__map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b213784e38e57660d06ffebe59576484fd8b24a515800df2cd346bab8ebe8c3&amp;amp;source=constructor" frameborder="0"></iframe>
+						</div>
+					</div>
+				</section>
+				<!-- end sContact-->
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+			<script>addBlock(`modals`)</script>
+			<div id="modalsWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="libs/masonry-layout/masonry.pkgd.min.js"> </script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
