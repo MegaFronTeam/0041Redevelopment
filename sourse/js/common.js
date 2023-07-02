@@ -14,7 +14,7 @@ const JSCCommon = {
 			type: 'inline',
 			autoFocus: false,
 			groupAll: false,
-			groupAttr: false,
+			groupAttr: 'fancybox',
 			// showClass: "fancybox-throwOutUp",
 			// hideClass: "fancybox-throwOutDown",
 			l10n: {

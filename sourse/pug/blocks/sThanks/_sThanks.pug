@@ -1,0 +1,13 @@
+mixin sThanks(data)
+	// start sThanks
+	+b.SECTION.sThanks.section#sThanks.bg-wrap&attributes(attributes)
+		+e.img-wrap.picture-bg
+			+img('img/sThanks-img.jpg', 'bg')
+		.container
+			+b.section-title.text-center
+				h1 Спасибо, ваша заявка принята!
+				p Наш менеджер свяжется с вами в ближайшее время.
+				a(href="#") 
+					+icon('go-back')
+					span Вернуться назад 
+	// end sThanks

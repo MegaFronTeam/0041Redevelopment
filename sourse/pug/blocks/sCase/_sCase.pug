@@ -1,0 +1,53 @@
+mixin sCase(data)
+	// start sCase
+	+b.SECTION.sCase.section#sCase&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Из коммуналки в аппарт-отель 
+			+e.grid
+				+e.grid-item--big-image(href='img/sCase-img-1.jpg' data-fancybox='gallery')
+					+e.wrap--big-image.bg-wrap: +img('img/sCase-img-1.jpg', 'bg').picture-bg
+				+e.grid-item(href='img/sCase-img-lg-2.jpg' data-fancybox='gallery')
+					+e.wrap.bg-wrap: +img('img/sCase-img-2.jpg', 'bg').picture-bg
+				+e.grid-item(href='img/sCase-img-lg-3.jpg' data-fancybox='gallery')
+					+e.wrap.bg-wrap: +img('img/sCase-img-3.jpg', 'bg').picture-bg
+				+e.grid-item(href='img/sCase-img-lg-4.jpg' data-fancybox='gallery')
+					+e.wrap.bg-wrap: +img('img/sCase-img-4.jpg', 'bg').picture-bg
+			+e.row.row
+				.col-sm-6.col-md
+					+e.item
+						+icon('sCase-icon-1')
+						| Оружейный переулок,  дом 13, строение 2
+				.col-sm-6.col-md
+					+e.item
+						+icon('sCase-icon-2')
+						| 75 дней
+				.col-sm-6.col-md
+					+e.item
+						+icon('sCase-icon-3')
+						| 580 000 руб
+				.col-sm-6.col-md
+					+e.item
+						+icon('sCase-icon-4')
+						p Распоряжение 
+							a(href="#") Посмотреть
+			+e.footer-wrap
+				.row
+					.col-md
+						h4 Техническое задание:
+						ul
+							li Демонтаж ненесущих межкомнатных перегородок;
+							li Монтаж ненесущих межкомнатных перегородок;
+							li Несущие конструкции не затрагиваются;
+							li Инженерные короба не затрагиваются;
+							li Увеличение мокрых зон за счет жилых помещений;
+							li Изменение систем водоснабжения и канализации;
+					.col-md
+						h4 Что было получено:
+						ul
+							li Акт приемочной комиссии (получение положительного решения Мосжилинспекции);
+							li Акт скрытых работ на гидроизоляцию;
+							li Акт скрытых работ на шумоизоляцию;
+							li Журнал проведенных работ;
+							li Договор подряда на выполнение ремонтных работ;
+	// end sCase

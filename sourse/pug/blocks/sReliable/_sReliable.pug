@@ -1,0 +1,50 @@
+mixin sReliable(data)
+	// start sReliable
+	+b.SECTION.sReliable.section#sReliable&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Вы в надежной компании
+			+e.grid
+				mixin gridItem(title, text)
+					+e.grid-item
+						+e.wrap&attributes(attributes)
+							h3!=title
+							p!=text
+							block
+				+gridItem('7 лет', 'На рынке').--years
+				+gridItem('Допуски', 'Имеем допуск СРО и соответствующие лицензии')
+				+gridItem('> 1300', 'Перепланировок за 2022 год')
+					+e.text
+						a(href="#") Посмотреть кейсы
+				+gridItem('100%', 'Вероятность согласования')
+					+e.text *если беремся за проект, то его точно согласуют
+				+gridItem('18', 'Сотрудников в штате')
+				+gridItem('48 дней', 'Среднее время согласования').--days
+				+e.grid-item
+					+e.wrap--accept
+						+e.inner-row.row
+							.col-lg
+								h3 Согласовываем в органах власти
+								p Без труда согласуем перепланировку любой сложности в Москве и Московской области
+							.col-lg
+								+e.logo-row.row
+									.col-auto
+										+img('img/logo-1.png')
+									.col-auto
+										+img('img/logo-2.png')
+									.col-auto
+										+img('img/logo-3.png')
+								+e.logo-row--2.row
+									.col-auto
+										+img('img/logo-4.png')
+									.col-auto
+										+img('img/logo-5.png')
+									.col-auto
+										+img('img/logo-6.png')
+									.col-auto
+										+img('img/logo-7.png')
+									.col-auto
+										+img('img/logo-8.png')
+									.col-auto
+										+img('img/logo-9.png')
+	// end sReliable

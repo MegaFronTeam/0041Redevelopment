@@ -12,9 +12,11 @@ include ../blocks/sPortfolio/_sPortfolio.pug
 include ../blocks/sTeam/_sTeam.pug
 include ../blocks/sFaq/_sFaq.pug
 include ../blocks/sBlogBlock/_sBlogBlock.pug
+include ../blocks/sReliable/_sReliable.pug
+include ../blocks/sAbout/_sAbout.pug
 
 block variables
-	- let  mainPage= '' 
+	- let  mainPage= 'about-page' 
 	- let  bg= ''
 
 block title
@@ -26,11 +28,11 @@ block pagecontent
 	
 	+parts('header')
 	main
-		+headerBlock2('О компании', 'headerBlock-bg-4.jpg')
-		+page-head('', 'О компании').bg-white
-		//- 
-		//- 
-		+sTeam
+		+headerBlock2('О компании', 'headerBlock-bg-4.jpg', false)
+		+page-head('', 'О компании')
+		+sReliable
+		+sAbout2
+		+sTeam.bg-white
 		+sPortfolio
 		+sBlogBlock
 		+sContact

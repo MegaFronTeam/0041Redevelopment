@@ -249,3 +249,29 @@
 		}
 	}
 }
+
+.case-page {
+	.sFaq {
+		background-color: #F9F9FA;
+		@include media-breakpoint-up(lg) {
+			--sPT: #{rem(0)};
+			--sPB: #{rem(120)};
+		}
+	}
+	.sContact {
+		@include media-breakpoint-up(lg) {
+			--sPT: #{rem(120)};
+			--sPB: #{rem(120)};
+		}
+	}
+}
+
+.about-page {
+	.headerBlock {
+		.section-title {
+			@include media-breakpoint-up(lg) {
+				--sTPB: #{rem(43)};
+			}
+		}
+	}
+}

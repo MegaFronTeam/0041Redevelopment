@@ -11,9 +11,10 @@ include ../blocks/sServices/_sServices.pug
 include ../blocks/sPortfolio/_sPortfolio.pug
 include ../blocks/sTeam/_sTeam.pug
 include ../blocks/sFaq/_sFaq.pug
+include ../blocks/sCase/_sCase.pug
 
 block variables
-	- let  mainPage= 'examples-page' 
+	- let  mainPage= 'case-page' 
 	- let  bg= ''
 
 block title
@@ -26,8 +27,8 @@ block pagecontent
 	+parts('header')
 	main
 		+headerBlock2('Примеры наших работ', 'headerBlock-bg-4.jpg')
-		+page-head('', 'Наши проекты ', 'Кейс 1').bg-white
-		//- 
+		+page-head('', 'Наши проекты ', 'Кейс 1')
+		+sCase
 		+sAudit
 		+sFaq
 		+sContact

@@ -10,14 +10,14 @@ include ../blocks/sAudit/_sAudit.pug
 include ../blocks/sServices/_sServices.pug
 include ../blocks/sPortfolio/_sPortfolio.pug
 include ../blocks/sTeam/_sTeam.pug
-include ../blocks/sFaq/_sFaq.pug
+include ../blocks/sThanks/_sThanks.pug
 
 block variables
-	- let  mainPage= 'examples-page' 
+	- let  mainPage= '' 
 	- let  bg= ''
 
 block title
-	- let  title= 'Примеры наших работ'
+	- let  title= 'Спасибо'
 	title= title
 block pagecontent
 	//- +mob-mnu()
@@ -25,14 +25,7 @@ block pagecontent
 	
 	+parts('header')
 	main
-		+headerBlock2('Примеры наших работ', 'headerBlock-bg-4.jpg')
-		+page-head('', 'Наши проекты ', 'Кейс 1').bg-white
-		//- 
-		+sAudit
-		+sFaq
-		+sContact
-	+parts('footer')
-	+parts('modals')
+		+sThanks
 	//- +cookies()
       
 
