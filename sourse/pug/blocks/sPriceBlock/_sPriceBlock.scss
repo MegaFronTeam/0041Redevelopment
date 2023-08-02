@@ -72,12 +72,51 @@
 		}
 	}
 	&__table-wrap {
-		overflow-x: auto;
-		overflow-y: hidden;
+		// overflow-x: auto;
+		// overflow-y: hidden;
 	}
 	table {
 		width: 100%;
-		min-width: rem(504);
+		// min-width: rem(504);
+		thead {
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+		tbody {
+			@include media-breakpoint-down(sm) {
+				tr {
+					display: flex;
+					flex-wrap: wrap;
+				}
+				td {
+					width: 50%;
+					padding: rem(9) rem(18);
+					&:before {
+						display: block;
+						font-weight: 400;
+						margin-bottom: rem(8);
+						font-size: rem(16);
+					}
+					&:first-child {
+						width: 100%;
+						&::before {
+							content: 'Услуга';
+						}
+					}
+					&:nth-child(2) {
+						&::before {
+							content: 'Сроки';
+						}
+					}
+					&:nth-child(3) {
+						&::before {
+							content: 'Стоимость';
+						}
+					}
+				}
+			}
+		}
 		tr {
 			border-radius: 4px;
 			&:nth-child(even) {
