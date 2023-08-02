@@ -1,0 +1,46 @@
+// start .sReviews
+.sReviews {
+	--sPT: #{rem(50)};
+	--sPB: #{rem(30)};
+	--sTPB: #{rem(25)};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(103)};
+		--sPB: #{rem(60)};
+		--sTPB: #{rem(58)};
+	}
+	&__row{
+		--bs-gutter-x: #{rem(8)};
+		--bs-gutter-y: #{rem(12)};
+		@include media-breakpoint-up(lg) {
+			--bs-gutter-y: #{rem(21)};
+		}
+	}
+	&__col {
+		@include media-breakpoint-up(xl) {
+			width: calc(100% / 8);
+		}
+	}
+	&__item {
+		@include block(141, 257);
+	}
+	.section-title {
+		h2 {
+			margin-bottom: rem(12);
+			line-height: 1.17;
+		}
+		p {
+			margin-bottom: 0;
+			@include media-breakpoint-up(lg) {
+				font-size: rem(20);
+			}
+		}
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sReviews

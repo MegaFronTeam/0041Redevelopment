@@ -8,3 +8,5 @@
 1. <https://megafronteam.github.io/0041Redevelopment/public/06-case.html>
 1. <https://megafronteam.github.io/0041Redevelopment/public/07-thanks.html>
 1. <https://megafronteam.github.io/0041Redevelopment/public/08-about.html>
+1. <https://megafronteam.github.io/0041Redevelopment/public/10-price-list.html>
+1. <https://megafronteam.github.io/0041Redevelopment/public/11-reviews.html>

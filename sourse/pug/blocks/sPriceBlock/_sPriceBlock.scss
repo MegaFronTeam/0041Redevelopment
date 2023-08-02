@@ -1,0 +1,168 @@
+// start .sPriceBlock
+.sPriceBlock {
+	--sPT: #{rem(30)};
+	--sPB: #{rem(30)};
+	--sTPB: #{rem(18)};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(40)};
+		--sPB: #{rem(45)};
+		--sTPB: #{rem(36)};
+	}
+	.section-title {
+		h2 {
+			margin-bottom: rem(12);
+			line-height: 1.17;
+		}
+		p {
+			margin-bottom: 0;
+			@include media-breakpoint-up(lg) {
+				font-size: rem(20);
+			}
+		}
+	}
+	.tabs {
+		&__caption {
+			position: relative;
+			overflow: visible;
+			margin-bottom: rem(25);
+			@include media-breakpoint-up(lg) {
+				margin-bottom: rem(35);
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 200vw;
+				height: 1px;
+				left: -50vw;
+				bottom: 2px;
+				transform: translateY(50%);
+				background-color: #D3D3D3;
+			}
+		}
+		&__btn {
+			width: auto;
+			font-size: rem(16);
+			font-weight: 500;
+			color: #B6B6B6;
+			line-height: 1.2;
+			padding-bottom: rem(5);
+			@include mt;
+			border-bottom: 4px solid transparent;
+			&:hover, &.active {
+				border-color: $primary;
+				color: $gray-900;
+			}
+			&.disabled {
+				pointer-events: none;
+				opacity: 0.8;
+			}
+			@include media-breakpoint-up(lg) {
+				font-size: rem(20);
+			}
+			&:not(:last-child) {
+				margin-right: rem(20);
+				@include media-breakpoint-up(lg) {
+					margin-right: rem(40);
+				}
+				@include media-breakpoint-up(xl) {
+					margin-right: rem(45);
+				}
+			}
+		}
+	}
+	&__table-wrap {
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+	table {
+		width: 100%;
+		min-width: rem(504);
+		tr {
+			border-radius: 4px;
+			&:nth-child(even) {
+				td {
+					background-color: #F2F2F6;
+				}
+			}
+		}
+		th {
+			background-color: #DEDEE1;
+			font-weight: 400;
+			&:nth-child(2) {
+				width: rem(140);
+				@include media-breakpoint-up(lg) {
+					width: rem(300);
+				}
+			}
+			&:nth-child(3) {
+				width: rem(110);
+				@include media-breakpoint-up(lg) {
+					width: rem(162);
+				}
+			}
+		}
+		th, td {
+			padding: rem(9) rem(3);
+			line-height: 1.2;
+			&:first-child {
+				padding-left: rem(18);
+				border-radius: 4px 0 0 4px;
+				@include media-breakpoint-up(lg) {
+					padding-left: rem(40);
+				}
+			}
+			&:last-child {
+				padding-right: rem(18);
+				border-radius: 0 4px 4px 0;
+				@include media-breakpoint-up(lg) {
+					padding-right: rem(40);
+				}
+			}
+			@include media-breakpoint-up(lg) {
+				font-size: rem(20);
+				padding: rem(18) 0;
+			}
+		}
+	}
+	td {
+		font-weight: 300;
+		ul {
+			list-style-type: none;
+			margin-bottom: 0;
+			li {
+				color: #959595;
+				font-size: rem(14);
+				line-height: 1.2;
+				position: relative;
+				padding-left: rem(16);
+				&:before {
+					content: '';
+					position: absolute;
+					display: block;
+					width: rem(4);
+					height: rem(4);
+					border-radius: 50%;
+					background-color: currentColor;
+					left: rem(5);
+					top: rem(5);
+					@include media-breakpoint-up(lg) {
+						left: rem(10);
+						top: rem(8);
+					}
+				}
+				@include media-breakpoint-up(lg) {
+					font-size: rem(16);
+					padding-left: rem(25);
+				}
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sPriceBlock

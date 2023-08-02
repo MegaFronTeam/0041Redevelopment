@@ -1,0 +1,14 @@
+mixin sReviews(data)
+	// start sReviews
+	+b.SECTION.sReviews.section#sReviews&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Отзывы наших клиентов
+				p Вместо тысячи слов
+			+e.row.row
+				-for(let i = 0; i < 24; i++)
+					+e.col.col-4.col-md-3.col-lg-2.col-xl-auto
+						+e.item(href='img/sReviews-img-1.png' data-fancybox=`gallery-${i}` )
+							.img-wrap-center
+								+img('img/sReviews-img-1.png')
+	// end sReviews
