@@ -91,7 +91,7 @@
 				}
 				td {
 					width: 50%;
-					padding: rem(9) rem(18);
+					padding: rem(12) rem(18);
 					&:before {
 						display: block;
 						font-weight: 400;
@@ -100,16 +100,22 @@
 					}
 					&:first-child {
 						width: 100%;
+						padding-bottom: rem(3);
+						border-radius: 4px 4px 0 0;
 						&::before {
 							content: 'Услуга';
 						}
 					}
 					&:nth-child(2) {
+						padding-top: rem(3);
+						border-radius: 0 0 0 4px;
 						&::before {
 							content: 'Сроки';
 						}
 					}
 					&:nth-child(3) {
+						padding-top: rem(3);
+						border-radius: 0 0 4px 0;
 						&::before {
 							content: 'Стоимость';
 						}
