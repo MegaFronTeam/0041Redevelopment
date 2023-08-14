@@ -1,26 +1,121 @@
 
-	// start .sContent
-	.sContent {
-	
-	// --sPT: #{rem()};
-	// --sPB: #{rem()};
+// start .sContent
+.sContent {
+	--sPT: #{rem(60)};
+	--sPB: #{rem(60)};
 	// --sTPB: #{rem()};
-	&__row{
-		// --bs-gutter-x: #{rem()};
-		--bs-gutter-y: var(--bs-gutter-x);
-
+	@include media-breakpoint-up(md) {
+		--sPT: #{rem(120)};
+		--sPB: #{rem(120)};
 	}
-	.section-title{
-		
+	h2, .h2 {
+		margin-bottom: rem(12);
 	}
-	&__col{
-
+	p {
+		line-height: 1.2;
+		margin-bottom: rem(12);
+		font-size: rem(16);
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(24);
+			font-size: rem(20);
+		}
+		span {
+			font-weight: 500;
+			display: block;
+		}
 	}
-	&__item{
-
+	ul {
+		margin-bottom: rem(18);
+		list-style-type: none;
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(24);
+		}
+		li {
+			position: relative;
+			font-size: rem(16);
+			display: flex;
+			align-items: center;
+			font-weight: 300;
+			line-height: 1.2;
+			@include media-breakpoint-up(md) {
+				font-size: rem(20);
+			}
+			&:not(:last-child) {
+				margin-bottom: rem(16);
+				@include media-breakpoint-up(md) {
+					margin-bottom: rem(21);
+				}
+			}
+			&::before {
+				content: '';
+				display: block;
+				width: rem(30.462);
+				height: rem(30);
+				flex: 0 0 auto;
+				margin-right: rem(8);
+				background-image: url("data:image/svg+xml,%3Csvg width='31' height='30' viewBox='0 0 31 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.6518 0.0493889C8.41409 0.634068 3.87965 3.75957 1.56482 8.38648C-0.969778 13.4393 -0.39107 19.4882 3.05188 24.0068C3.57198 24.6925 4.83196 25.9774 5.55717 26.5765C7.3812 28.0707 9.79127 29.2111 12.1354 29.6803C14.8165 30.2217 17.3951 30.0773 20.0029 29.2328C23.8414 27.9985 27.0793 25.2122 28.8886 21.5959C30.5295 18.326 30.8958 14.4354 29.8996 10.9634C29.6798 10.1838 29.504 9.90231 29.145 9.70742C28.4491 9.33207 27.4602 9.89509 27.4602 10.6674C27.4602 10.819 27.5408 11.216 27.636 11.5409C28.8593 15.713 27.7093 20.3688 24.6692 23.6026C19.8124 28.7636 11.7179 29.074 6.4875 24.2955C1.85783 20.0656 1.00076 13.2877 4.43638 8.06166C7.63759 3.20377 13.8715 1.08882 19.4315 2.98722C20.2886 3.27595 21.5339 3.87507 22.1566 4.28651C22.8012 4.7196 23.021 4.81344 23.3799 4.81344C24.2077 4.81344 24.7425 3.9689 24.3982 3.19655C24.2663 2.91504 24.1491 2.79955 23.5631 2.43141C21.783 1.29093 19.8637 0.554668 17.7906 0.193754C16.7504 0.0205173 14.6187 -0.0588837 13.6518 0.0493889Z' fill='%232521E7'/%3E%3Cpath d='M28.8868 1.60084C28.7256 1.65859 28.4839 1.82461 28.3593 1.97619C28.2275 2.12778 25.2241 5.66472 21.6932 9.84409C18.155 14.0162 15.2468 17.4377 15.2248 17.4377C15.2029 17.4377 14.0162 16.059 12.5877 14.3699C11.1592 12.6809 9.89194 11.2083 9.76741 11.0929C9.6502 10.9774 9.39381 10.8474 9.21068 10.7969C8.89568 10.7175 8.84441 10.7247 8.51476 10.8835C8.05326 11.1073 7.82617 11.4393 7.82617 11.8796C7.82617 12.0673 7.88478 12.32 7.95803 12.4427C8.14849 12.7819 14.3971 20.1012 14.6242 20.2456C14.8806 20.4116 15.5691 20.4116 15.8255 20.2456C16.0746 20.0868 30.0735 3.59308 30.3006 3.2033C30.3885 3.04449 30.4617 2.81351 30.4617 2.6908C30.4617 2.36598 30.1687 1.83905 29.9123 1.69468C29.5827 1.51422 29.2164 1.47813 28.8868 1.60084Z' fill='%232521E7'/%3E%3C/svg%3E%0A");
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				@include media-breakpoint-up(md)  {
+					margin-right: rem(18);
+				}
+			}
+		}
 	}
-	&__slide{
-		height: auto;
+	&__block {
+		&:not(:last-child) {
+			margin-bottom: rem(40);
+			@include media-breakpoint-up(md) {
+				margin-bottom: rem(60);
+			}
+		}
+		p {
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__tag {
+		display: inline-block;
+		font-size: rem(14);
+		padding: rem(8) rem(12);
+		border-radius: 16px;
+		border: 1px solid $primary;
+		margin-bottom: rem(18);
+		font-weight: 600;
+		line-height: 1.25;
+		@include media-breakpoint-up(md) {
+			font-size: rem(16);
+			padding: rem(10) rem(16);
+			margin-bottom: rem(24);
+		}
+	}
+	&__sub-content {
+		margin-bottom: rem(36);
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(48);
+		}
+		p {
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+		.img {
+			margin-top: rem(18);
+			@include media-breakpoint-up(md) {
+				margin-top: rem(24);
+			}
+		}
+		.row {
+			--bs-gutter-x: #{rem(44)};
+			--bs-gutter-y: #{rem(18)};
+		}
+	}
+	&__img-wrap {
+		@include block(592, 480);
+		width: 100%;
+		max-width: rem(592);
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
